@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('id_gor');
             $table->string('nama_lapangan');
-            $table->string('slug_lapangan')->unique();
+            $table->string('slug_lapangan');
             $table->string('keterangan_lapangan');
             $table->string('harga_sewa');
             $table->string('foto_lapangan');
