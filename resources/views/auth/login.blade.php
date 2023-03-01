@@ -17,7 +17,7 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>
                     @endif
-                    <h1 class="auth-title">Log in.</h1>
+                    <h1 class="auth-title mt-5">Log in.</h1>
                     <p class="auth-subtitle mb-3">
                         Log in with your data that you entered during registration.
                     </p>

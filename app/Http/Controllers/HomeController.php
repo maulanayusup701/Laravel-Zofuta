@@ -11,7 +11,7 @@ class HomeController extends Controller
     {
         return view('frontend.home', [
             'title' => 'Zofuta | Zona Futsal Purwakarta',
-            'gors' => DB::table('gors')->paginate(9)
+            'gors' => DB::table('gors')->paginate(6)
         ]);
     }
 }

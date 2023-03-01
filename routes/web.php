@@ -3,6 +3,7 @@
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,4 +26,6 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('/login', 'loginAuth')->middleware('guest');
     Route::get('/register', 'register')->middleware('guest');
     Route::post('/register', 'registerStore')->middleware('guest');
+    Route::post('/logout', 'logout')->middleware('auth');
 });
+Route::resource('/dashboard', DashboardController::class)->middleware('auth');

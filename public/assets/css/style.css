@@ -19,7 +19,7 @@ a {
 }
 
 a:hover {
-    color: #ffd584;
+    color: #1b7b4e;
     text-decoration: none;
 }
 
@@ -132,7 +132,6 @@ h6 {
 #header {
     transition: all 0.5s;
     z-index: 997;
-    padding: 15px 15px;
 }
 
 #header.header-scrolled,
@@ -159,6 +158,36 @@ h6 {
 }
 
 #header .logo img {
+    max-height: 40px;
+}
+/*--------------------------------------------------------------
+# Header Auth
+--------------------------------------------------------------*/
+#header-auth {
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.5s;
+    z-index: 997;
+}
+
+#header-auth .logo {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+#header-auth .logo a {
+    color: #fff;
+}
+
+#header-auth .logo a span {
+    color: #198754;
+}
+
+#header-auth .logo img {
     max-height: 40px;
 }
 

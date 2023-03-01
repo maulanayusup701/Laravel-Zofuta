@@ -3,9 +3,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 300;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-300-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-300-normal.woff2?bdea52a97975fe3b5a913b4103780c1b)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff2)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff?7e0da6e09bc199986988c0c7498beb1c)
             format("woff");
     unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f,
         u+fe2e-fe2f;
@@ -15,20 +15,20 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 300;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-300-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-300-normal.woff2?3cf1ea4958e9e18a6eba61a695f548f2)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff?7e0da6e09bc199986988c0c7498beb1c)
             format("woff");
-    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
 }
 @font-face {
     font-display: swap;
     font-family: Nunito;
     font-style: normal;
     font-weight: 300;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-300-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-300-normal.woff2?dfa31d492c43807b27c29c50bdc1688b)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff?7e0da6e09bc199986988c0c7498beb1c)
             format("woff");
     unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169,
         u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab;
@@ -38,9 +38,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 300;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-300-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-300-normal.woff2?efc4195dbb895ec1985c7be44326bd63)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff?7e0da6e09bc199986988c0c7498beb1c)
             format("woff");
     unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf,
         u+2113, u+2c60-2c7f, u+a720-a7ff;
@@ -50,9 +50,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 300;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-latin-300-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-300-normal.woff2?b910844d7a322238ec945d43a31a7050)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-300-normal.woff?7e0da6e09bc199986988c0c7498beb1c)
             format("woff");
     unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
         u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212,
@@ -63,9 +63,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-400-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-400-normal.woff2?f21ac09511c6fa4f94633549c5716665)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff?8f2fc6317388452f7ad144ea0cdb853e)
             format("woff");
     unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f,
         u+fe2e-fe2f;
@@ -75,20 +75,20 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-400-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-400-normal.woff2?a0473b5006c28d8a449913aaab9e225d)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff?8f2fc6317388452f7ad144ea0cdb853e)
             format("woff");
-    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
 }
 @font-face {
     font-display: swap;
     font-family: Nunito;
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-400-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-400-normal.woff2?6a8bc7acd205391fb71a9326938d6b63)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff?8f2fc6317388452f7ad144ea0cdb853e)
             format("woff");
     unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169,
         u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab;
@@ -98,9 +98,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-400-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-400-normal.woff2?e8049e65c49ce687cff1bf71dfa6a5d0)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff?8f2fc6317388452f7ad144ea0cdb853e)
             format("woff");
     unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf,
         u+2113, u+2c60-2c7f, u+a720-a7ff;
@@ -110,9 +110,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 400;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-latin-400-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-400-normal.woff2?b8644b6e04ecda1cf98bbb37f17d0ef3)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-400-normal.woff?8f2fc6317388452f7ad144ea0cdb853e)
             format("woff");
     unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
         u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212,
@@ -123,9 +123,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-600-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-600-normal.woff2?a966a96b5f86c1790d611dc2a071f533)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff?c98d6b1e33b1d5275530ae9cad92dc09)
             format("woff");
     unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f,
         u+fe2e-fe2f;
@@ -135,20 +135,20 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-600-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-600-normal.woff2?1dd32244f44e3237f333f099fbb9e7b5)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff?c98d6b1e33b1d5275530ae9cad92dc09)
             format("woff");
-    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
 }
 @font-face {
     font-display: swap;
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-600-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-600-normal.woff2?73867bf9b4b837f997c48e82ec28616a)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff?c98d6b1e33b1d5275530ae9cad92dc09)
             format("woff");
     unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169,
         u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab;
@@ -158,9 +158,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-600-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-600-normal.woff2?9704ee910d46b3c17e69dce6da1b19a3)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff?c98d6b1e33b1d5275530ae9cad92dc09)
             format("woff");
     unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf,
         u+2113, u+2c60-2c7f, u+a720-a7ff;
@@ -170,9 +170,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 600;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-latin-600-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-600-normal.woff2?2b48b7fe12163661f95ab32aebeaed01)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-600-normal.woff?c98d6b1e33b1d5275530ae9cad92dc09)
             format("woff");
     unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
         u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212,
@@ -183,9 +183,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-700-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-700-normal.woff2?6f62b8277e1be35439a6f146e35525c3)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff?46a2b1a717b94f9b4b103b12d8bf7b6b)
             format("woff");
     unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f,
         u+fe2e-fe2f;
@@ -195,20 +195,20 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-700-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-700-normal.woff2?d30bbf13744f76549350b999396205c8)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff?46a2b1a717b94f9b4b103b12d8bf7b6b)
             format("woff");
-    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
 }
 @font-face {
     font-display: swap;
     font-family: Nunito;
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-700-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-700-normal.woff2?8862ea6993677ed0a88f2f310121476b)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff?46a2b1a717b94f9b4b103b12d8bf7b6b)
             format("woff");
     unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169,
         u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab;
@@ -218,9 +218,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-700-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-700-normal.woff2?4bcdf80378aecff12c8d67cfc4164cf6)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff?46a2b1a717b94f9b4b103b12d8bf7b6b)
             format("woff");
     unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf,
         u+2113, u+2c60-2c7f, u+a720-a7ff;
@@ -230,9 +230,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 700;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-latin-700-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-700-normal.woff2?adfd120897fcd366e78e43a700ca8bfc)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-700-normal.woff?46a2b1a717b94f9b4b103b12d8bf7b6b)
             format("woff");
     unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
         u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212,
@@ -243,9 +243,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 800;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-800-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-ext-800-normal.woff2?7931b4451e85184334d5e5ad03c2e1b1)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff?d4a1243dee08ed1aa06aa2d858a0e70c)
             format("woff");
     unicode-range: u+0460-052f, u+1c80-1c88, u+20b4, u+2de0-2dff, u+a640-a69f,
         u+fe2e-fe2f;
@@ -255,20 +255,20 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 800;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-800-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-cyrillic-800-normal.woff2?da7d3180b2807d20f628c3fef69a047b)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff?d4a1243dee08ed1aa06aa2d858a0e70c)
             format("woff");
-    unicode-range: u+0301, u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
+    unicode-range: u+0400-045f, u+0490-0491, u+04b0-04b1, u+2116;
 }
 @font-face {
     font-display: swap;
     font-family: Nunito;
     font-style: normal;
     font-weight: 800;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-800-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-vietnamese-800-normal.woff2?1911355e3ea73b1cce95fe7de940eb72)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff?d4a1243dee08ed1aa06aa2d858a0e70c)
             format("woff");
     unicode-range: u+0102-0103, u+0110-0111, u+0128-0129, u+0168-0169,
         u+01a0-01a1, u+01af-01b0, u+1ea0-1ef9, u+20ab;
@@ -278,9 +278,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 800;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-800-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-ext-800-normal.woff2?612cd00048b57f272c0046c7349e1c1b)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff?d4a1243dee08ed1aa06aa2d858a0e70c)
             format("woff");
     unicode-range: u+0100-024f, u+0259, u+1e??, u+2020, u+20a0-20ab, u+20ad-20cf,
         u+2113, u+2c60-2c7f, u+a720-a7ff;
@@ -290,9 +290,9 @@
     font-family: Nunito;
     font-style: normal;
     font-weight: 800;
-    src: url(/fonts/vendor/@fontsource/nunito/files/nunito-latin-800-normal.woff2)
+    src: url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-latin-800-normal.woff2?de4064435bf0f21e81104a7f39c75527)
             format("woff2"),
-        url(/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff)
+        url(../../../assets/fonts/vendor/@fontsource/nunito/files/nunito-all-800-normal.woff?d4a1243dee08ed1aa06aa2d858a0e70c)
             format("woff");
     unicode-range: u+00??, u+0131, u+0152-0153, u+02bb-02bc, u+02c6, u+02da,
         u+02dc, u+2000-206f, u+2074, u+20ac, u+2122, u+2191, u+2193, u+2212,
@@ -385,7 +385,7 @@
 }
 @charset "UTF-8";
 /*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
+ * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -420,7 +420,7 @@
     --bs-warning: #ffc107;
     --bs-danger: #dc3545;
     --bs-light: #f8f9fa;
-    --bs-dark: #131313;
+    --bs-dark: #f2f7ff;
     --bs-primary-rgb: 67, 94, 190;
     --bs-secondary-rgb: 108, 117, 125;
     --bs-success-rgb: 25, 135, 84;
@@ -428,7 +428,7 @@
     --bs-warning-rgb: 255, 193, 7;
     --bs-danger-rgb: 220, 53, 69;
     --bs-light-rgb: 248, 249, 250;
-    --bs-dark-rgb: 19, 19, 19;
+    --bs-dark-rgb: 242, 247, 255;
     --bs-white-rgb: 255, 255, 255;
     --bs-black-rgb: 0, 0, 0;
     --bs-body-color-rgb: 96, 112, 128;
@@ -460,8 +460,8 @@
     --bs-border-radius-xl: 1rem;
     --bs-border-radius-2xl: 2rem;
     --bs-border-radius-pill: 50rem;
-    --bs-link-color: #198754;
-    --bs-link-hover-color: #1b7b4e;
+    --bs-link-color: #435ebe;
+    --bs-link-hover-color: #364b98;
     --bs-code-color: #d63384;
     --bs-highlight-bg: #fcf8e3;
 }
@@ -808,6 +808,10 @@ legend + * {
 }
 ::-webkit-color-swatch-wrapper {
     padding: 0;
+}
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
 }
 ::file-selector-button {
     -webkit-appearance: button;
@@ -2311,6 +2315,24 @@ progress {
     background-color: #e9ecef;
     opacity: 1;
 }
+.form-control::-webkit-file-upload-button {
+    -webkit-margin-end: 0.75rem;
+    background-color: #e6eef5;
+    border: 0 solid;
+    border-color: inherit;
+    border-inline-end-width: 1px;
+    border-radius: 0;
+    color: #607080;
+    margin: -0.375rem -0.75rem;
+    margin-inline-end: 0.75rem;
+    padding: 0.375rem 0.75rem;
+    pointer-events: none;
+    -webkit-transition: color 0.15s ease-in-out,
+        background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
+        box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+        border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
 .form-control::file-selector-button {
     -webkit-margin-end: 0.75rem;
     background-color: #e6eef5;
@@ -2327,9 +2349,16 @@ progress {
         border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
+    .form-control::-webkit-file-upload-button {
+        -webkit-transition: none;
+        transition: none;
+    }
     .form-control::file-selector-button {
         transition: none;
     }
+}
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+    background-color: #dbe2e9;
 }
 .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
     background-color: #dbe2e9;
@@ -2359,6 +2388,12 @@ progress {
     min-height: calc(1.5em + 0.5rem + 2px);
     padding: 0.25rem 0.5rem;
 }
+.form-control-sm::-webkit-file-upload-button {
+    -webkit-margin-end: 0.5rem;
+    margin: -0.25rem -0.5rem;
+    margin-inline-end: 0.5rem;
+    padding: 0.25rem 0.5rem;
+}
 .form-control-sm::file-selector-button {
     -webkit-margin-end: 0.5rem;
     margin: -0.25rem -0.5rem;
@@ -2369,6 +2404,12 @@ progress {
     border-radius: 0.3rem;
     font-size: 1.25rem;
     min-height: calc(1.5em + 1rem + 2px);
+    padding: 0.5rem 1rem;
+}
+.form-control-lg::-webkit-file-upload-button {
+    -webkit-margin-end: 1rem;
+    margin: -0.5rem -1rem;
+    margin-inline-end: 1rem;
     padding: 0.5rem 1rem;
 }
 .form-control-lg::file-selector-button {
@@ -2486,6 +2527,7 @@ textarea.form-control-lg {
     margin-right: -1.7em;
 }
 .form-check-input {
+    color-adjust: exact;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -2704,7 +2746,6 @@ textarea.form-control-lg {
     padding: 1rem 0.75rem;
     pointer-events: none;
     position: absolute;
-    text-align: start;
     text-overflow: ellipsis;
     top: 0;
     transform-origin: 0 0;
@@ -2786,14 +2827,14 @@ textarea.form-control-lg {
 .input-group > .form-control:focus,
 .input-group > .form-floating:focus-within,
 .input-group > .form-select:focus {
-    z-index: 5;
+    z-index: 3;
 }
 .input-group .btn {
     position: relative;
     z-index: 2;
 }
 .input-group .btn:focus {
-    z-index: 5;
+    z-index: 3;
 }
 .input-group-text {
     align-items: center;
@@ -2854,18 +2895,15 @@ textarea.form-control-lg {
     border-bottom-right-radius: 0;
     border-top-right-radius: 0;
 }
+.input-group > .form-floating:not(:first-child) > .form-control,
+.input-group > .form-floating:not(:first-child) > .form-select,
 .input-group
-    > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(
-        .valid-feedback
-    ):not(.invalid-tooltip):not(.invalid-feedback) {
+    > :not(:first-child):not(.dropdown-menu):not(.form-floating):not(
+        .valid-tooltip
+    ):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
     margin-left: -1px;
-}
-.input-group > .form-floating:not(:first-child) > .form-control,
-.input-group > .form-floating:not(:first-child) > .form-select {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
 }
 .valid-feedback {
     color: #198754;
@@ -2955,12 +2993,16 @@ textarea.form-control.is-valid {
 .form-check-inline .form-check-input ~ .valid-feedback {
     margin-left: 0.5em;
 }
-.input-group > .form-control:not(:focus).is-valid,
-.input-group > .form-floating:not(:focus-within).is-valid,
-.input-group > .form-select:not(:focus).is-valid,
-.was-validated .input-group > .form-control:not(:focus):valid,
-.was-validated .input-group > .form-floating:not(:focus-within):valid,
-.was-validated .input-group > .form-select:not(:focus):valid {
+.input-group .form-control.is-valid,
+.input-group .form-select.is-valid,
+.was-validated .input-group .form-control:valid,
+.was-validated .input-group .form-select:valid {
+    z-index: 1;
+}
+.input-group .form-control.is-valid:focus,
+.input-group .form-select.is-valid:focus,
+.was-validated .input-group .form-control:valid:focus,
+.was-validated .input-group .form-select:valid:focus {
     z-index: 3;
 }
 .invalid-feedback {
@@ -3051,13 +3093,17 @@ textarea.form-control.is-invalid {
 .form-check-inline .form-check-input ~ .invalid-feedback {
     margin-left: 0.5em;
 }
-.input-group > .form-control:not(:focus).is-invalid,
-.input-group > .form-floating:not(:focus-within).is-invalid,
-.input-group > .form-select:not(:focus).is-invalid,
-.was-validated .input-group > .form-control:not(:focus):invalid,
-.was-validated .input-group > .form-floating:not(:focus-within):invalid,
-.was-validated .input-group > .form-select:not(:focus):invalid {
-    z-index: 4;
+.input-group .form-control.is-invalid,
+.input-group .form-select.is-invalid,
+.was-validated .input-group .form-control:invalid,
+.was-validated .input-group .form-select:invalid {
+    z-index: 2;
+}
+.input-group .form-control.is-invalid:focus,
+.input-group .form-select.is-invalid:focus,
+.was-validated .input-group .form-control:invalid:focus,
+.was-validated .input-group .form-select:invalid:focus {
+    z-index: 3;
 }
 .btn {
     --bs-btn-padding-x: 0.75rem;
@@ -3071,7 +3117,6 @@ textarea.form-control.is-invalid {
     --bs-btn-border-width: 1px;
     --bs-btn-border-color: transparent;
     --bs-btn-border-radius: 0.25rem;
-    --bs-btn-hover-border-color: transparent;
     --bs-btn-box-shadow: inset 0 1px 0 hsla(0, 0%, 100%, 0.15),
         0 1px 1px rgba(0, 0, 0, 0.075);
     --bs-btn-disabled-opacity: 0.65;
@@ -3102,42 +3147,32 @@ textarea.form-control.is-invalid {
         transition: none;
     }
 }
+.btn-check:focus + .btn,
+.btn:focus,
 .btn:hover {
     background-color: var(--bs-btn-hover-bg);
     border-color: var(--bs-btn-hover-border-color);
     color: var(--bs-btn-hover-color);
 }
-.btn-check + .btn:hover {
-    background-color: var(--bs-btn-bg);
-    border-color: var(--bs-btn-border-color);
-    color: var(--bs-btn-color);
-}
-.btn:focus-visible {
-    background-color: var(--bs-btn-hover-bg);
-    border-color: var(--bs-btn-hover-border-color);
-    box-shadow: var(--bs-btn-focus-box-shadow);
-    color: var(--bs-btn-hover-color);
-    outline: 0;
-}
-.btn-check:focus-visible + .btn {
-    border-color: var(--bs-btn-hover-border-color);
+.btn-check:focus + .btn,
+.btn:focus {
     box-shadow: var(--bs-btn-focus-box-shadow);
     outline: 0;
 }
+.btn-check:active + .btn,
 .btn-check:checked + .btn,
 .btn.active,
 .btn.show,
-.btn:first-child:active,
-:not(.btn-check) + .btn:active {
+.btn:active {
     background-color: var(--bs-btn-active-bg);
     border-color: var(--bs-btn-active-border-color);
     color: var(--bs-btn-active-color);
 }
-.btn-check:checked + .btn:focus-visible,
-.btn.active:focus-visible,
-.btn.show:focus-visible,
-.btn:first-child:active:focus-visible,
-:not(.btn-check) + .btn:active:focus-visible {
+.btn-check:active + .btn:focus,
+.btn-check:checked + .btn:focus,
+.btn.active:focus,
+.btn.show:focus,
+.btn:active:focus {
     box-shadow: var(--bs-btn-focus-box-shadow);
 }
 .btn.disabled,
@@ -3262,20 +3297,20 @@ fieldset:disabled .btn {
     --bs-btn-disabled-border-color: #f8f9fa;
 }
 .btn-dark {
-    --bs-btn-color: #fff;
-    --bs-btn-bg: #131313;
-    --bs-btn-border-color: #131313;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #363636;
-    --bs-btn-hover-border-color: #2b2b2b;
-    --bs-btn-focus-shadow-rgb: 54, 54, 54;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #424242;
-    --bs-btn-active-border-color: #2b2b2b;
+    --bs-btn-color: #000;
+    --bs-btn-bg: #f2f7ff;
+    --bs-btn-border-color: #f2f7ff;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #f4f8ff;
+    --bs-btn-hover-border-color: #f3f8ff;
+    --bs-btn-focus-shadow-rgb: 206, 210, 217;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #f5f9ff;
+    --bs-btn-active-border-color: #f3f8ff;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #fff;
-    --bs-btn-disabled-bg: #131313;
-    --bs-btn-disabled-border-color: #131313;
+    --bs-btn-disabled-color: #000;
+    --bs-btn-disabled-bg: #f2f7ff;
+    --bs-btn-disabled-border-color: #f2f7ff;
 }
 .btn-outline-primary {
     --bs-btn-color: #435ebe;
@@ -3390,19 +3425,19 @@ fieldset:disabled .btn {
     --bs-gradient: none;
 }
 .btn-outline-dark {
-    --bs-btn-color: #131313;
-    --bs-btn-border-color: #131313;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #131313;
-    --bs-btn-hover-border-color: #131313;
-    --bs-btn-focus-shadow-rgb: 19, 19, 19;
-    --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #131313;
-    --bs-btn-active-border-color: #131313;
+    --bs-btn-color: #f2f7ff;
+    --bs-btn-border-color: #f2f7ff;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #f2f7ff;
+    --bs-btn-hover-border-color: #f2f7ff;
+    --bs-btn-focus-shadow-rgb: 242, 247, 255;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #f2f7ff;
+    --bs-btn-active-border-color: #f2f7ff;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #131313;
+    --bs-btn-disabled-color: #f2f7ff;
     --bs-btn-disabled-bg: transparent;
-    --bs-btn-disabled-border-color: #131313;
+    --bs-btn-disabled-border-color: #f2f7ff;
     --bs-gradient: none;
 }
 .btn-link {
@@ -3420,7 +3455,7 @@ fieldset:disabled .btn {
     --bs-btn-focus-shadow-rgb: 95, 118, 200;
     text-decoration: underline;
 }
-.btn-link:focus-visible {
+.btn-link:focus {
     color: var(--bs-btn-color);
 }
 .btn-link:hover {
@@ -3499,7 +3534,6 @@ fieldset:disabled .btn {
     margin-left: 0;
 }
 .dropdown-menu {
-    --bs-dropdown-zindex: 1000;
     --bs-dropdown-min-width: 15rem;
     --bs-dropdown-padding-x: 0;
     --bs-dropdown-padding-y: 0.5rem;
@@ -3539,7 +3573,7 @@ fieldset:disabled .btn {
     padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
     position: absolute;
     text-align: left;
-    z-index: var(--bs-dropdown-zindex);
+    z-index: 1000;
 }
 .dropdown-menu[data-bs-popper] {
     left: 0;
@@ -3816,7 +3850,7 @@ fieldset:disabled .btn {
     border-radius: 0.25rem;
 }
 .btn-group > .btn-group:not(:first-child),
-.btn-group > :not(.btn-check:first-child) + .btn {
+.btn-group > .btn:not(:first-child) {
     margin-left: -1px;
 }
 .btn-group > .btn-group:not(:last-child) > .btn,
@@ -4580,7 +4614,7 @@ fieldset:disabled .btn {
     }
 }
 .accordion {
-    --bs-accordion-color: #607080;
+    --bs-accordion-color: #fff;
     --bs-accordion-bg: transparent;
     --bs-accordion-transition: color 0.15s ease-in-out,
         background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
@@ -4710,8 +4744,7 @@ fieldset:disabled .btn {
 .accordion-flush .accordion-item:last-child {
     border-bottom: 0;
 }
-.accordion-flush .accordion-item .accordion-button,
-.accordion-flush .accordion-item .accordion-button.collapsed {
+.accordion-flush .accordion-item .accordion-button {
     border-radius: 0;
 }
 .breadcrumb {
@@ -4758,7 +4791,7 @@ fieldset:disabled .btn {
     --bs-pagination-hover-border-color: #dee2e6;
     --bs-pagination-focus-color: #198754;
     --bs-pagination-focus-bg: #e9ecef;
-    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem rgba(67, 94, 190, 0.25);
+    --bs-pagination-focus-box-shadow: 0 0 0 0.25rem #198754(67, 94, 190, 0.25);
     --bs-pagination-active-color: #fff;
     --bs-pagination-active-bg: #198754;
     --bs-pagination-active-border-color: #198754;
@@ -4952,12 +4985,12 @@ fieldset:disabled .btn {
     color: #4f5050;
 }
 .alert-dark {
-    --bs-alert-color: #0b0b0b;
-    --bs-alert-bg: #d0d0d0;
-    --bs-alert-border-color: #b8b8b8;
+    --bs-alert-color: #616366;
+    --bs-alert-bg: #fcfdff;
+    --bs-alert-border-color: #fbfdff;
 }
 .alert-dark .alert-link {
-    color: #090909;
+    color: #4e4f52;
 }
 @-webkit-keyframes progress-bar-stripes {
     0% {
@@ -4973,7 +5006,7 @@ fieldset:disabled .btn {
     --bs-progress-height: 1rem;
     --bs-progress-font-size: 0.75rem;
     --bs-progress-bg: #e9ecef;
-    --bs-progress-border-radius: 0.18rem;
+    --bs-progress-border-radius: 0.25rem;
     --bs-progress-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
     --bs-progress-bar-color: #fff;
     --bs-progress-bar-bg: #435ebe;
@@ -5114,11 +5147,11 @@ fieldset:disabled .btn {
 .list-group-horizontal {
     flex-direction: row;
 }
-.list-group-horizontal > .list-group-item:first-child:not(:last-child) {
+.list-group-horizontal > .list-group-item:first-child {
     border-bottom-left-radius: var(--bs-list-group-border-radius);
     border-top-right-radius: 0;
 }
-.list-group-horizontal > .list-group-item:last-child:not(:first-child) {
+.list-group-horizontal > .list-group-item:last-child {
     border-bottom-left-radius: 0;
     border-top-right-radius: var(--bs-list-group-border-radius);
 }
@@ -5137,11 +5170,11 @@ fieldset:disabled .btn {
     .list-group-horizontal-sm {
         flex-direction: row;
     }
-    .list-group-horizontal-sm > .list-group-item:first-child:not(:last-child) {
+    .list-group-horizontal-sm > .list-group-item:first-child {
         border-bottom-left-radius: var(--bs-list-group-border-radius);
         border-top-right-radius: 0;
     }
-    .list-group-horizontal-sm > .list-group-item:last-child:not(:first-child) {
+    .list-group-horizontal-sm > .list-group-item:last-child {
         border-bottom-left-radius: 0;
         border-top-right-radius: var(--bs-list-group-border-radius);
     }
@@ -5161,11 +5194,11 @@ fieldset:disabled .btn {
     .list-group-horizontal-md {
         flex-direction: row;
     }
-    .list-group-horizontal-md > .list-group-item:first-child:not(:last-child) {
+    .list-group-horizontal-md > .list-group-item:first-child {
         border-bottom-left-radius: var(--bs-list-group-border-radius);
         border-top-right-radius: 0;
     }
-    .list-group-horizontal-md > .list-group-item:last-child:not(:first-child) {
+    .list-group-horizontal-md > .list-group-item:last-child {
         border-bottom-left-radius: 0;
         border-top-right-radius: var(--bs-list-group-border-radius);
     }
@@ -5185,11 +5218,11 @@ fieldset:disabled .btn {
     .list-group-horizontal-lg {
         flex-direction: row;
     }
-    .list-group-horizontal-lg > .list-group-item:first-child:not(:last-child) {
+    .list-group-horizontal-lg > .list-group-item:first-child {
         border-bottom-left-radius: var(--bs-list-group-border-radius);
         border-top-right-radius: 0;
     }
-    .list-group-horizontal-lg > .list-group-item:last-child:not(:first-child) {
+    .list-group-horizontal-lg > .list-group-item:last-child {
         border-bottom-left-radius: 0;
         border-top-right-radius: var(--bs-list-group-border-radius);
     }
@@ -5209,11 +5242,11 @@ fieldset:disabled .btn {
     .list-group-horizontal-xl {
         flex-direction: row;
     }
-    .list-group-horizontal-xl > .list-group-item:first-child:not(:last-child) {
+    .list-group-horizontal-xl > .list-group-item:first-child {
         border-bottom-left-radius: var(--bs-list-group-border-radius);
         border-top-right-radius: 0;
     }
-    .list-group-horizontal-xl > .list-group-item:last-child:not(:first-child) {
+    .list-group-horizontal-xl > .list-group-item:last-child {
         border-bottom-left-radius: 0;
         border-top-right-radius: var(--bs-list-group-border-radius);
     }
@@ -5233,11 +5266,11 @@ fieldset:disabled .btn {
     .list-group-horizontal-xxl {
         flex-direction: row;
     }
-    .list-group-horizontal-xxl > .list-group-item:first-child:not(:last-child) {
+    .list-group-horizontal-xxl > .list-group-item:first-child {
         border-bottom-left-radius: var(--bs-list-group-border-radius);
         border-top-right-radius: 0;
     }
-    .list-group-horizontal-xxl > .list-group-item:last-child:not(:first-child) {
+    .list-group-horizontal-xxl > .list-group-item:last-child {
         border-bottom-left-radius: 0;
         border-top-right-radius: var(--bs-list-group-border-radius);
     }
@@ -5361,17 +5394,17 @@ fieldset:disabled .btn {
     color: #fff;
 }
 .list-group-item-dark {
-    background-color: #d0d0d0;
-    color: #0b0b0b;
+    background-color: #fcfdff;
+    color: #616366;
 }
 .list-group-item-dark.list-group-item-action:focus,
 .list-group-item-dark.list-group-item-action:hover {
-    background-color: #bbb;
-    color: #0b0b0b;
+    background-color: #e3e4e6;
+    color: #616366;
 }
 .list-group-item-dark.list-group-item-action.active {
-    background-color: #0b0b0b;
-    border-color: #0b0b0b;
+    background-color: #616366;
+    border-color: #616366;
     color: #fff;
 }
 .btn-close {
@@ -5409,18 +5442,17 @@ fieldset:disabled .btn {
     filter: invert(1) grayscale(100%) brightness(200%);
 }
 .toast {
-    --bs-toast-zindex: 1090;
     --bs-toast-padding-x: 0.75rem;
     --bs-toast-padding-y: 0.5rem;
     --bs-toast-spacing: 0.75rem;
     --bs-toast-max-width: 350px;
     --bs-toast-font-size: 0.875rem;
-    --bs-toast-color: #343a40;
+    --bs-toast-color: ;
     --bs-toast-bg: hsla(0, 0%, 100%, 0.85);
     --bs-toast-border-width: 1px;
-    --bs-toast-border-color: rgba(56, 56, 56, 0.1);
-    --bs-toast-border-radius: 0.3rem;
-    --bs-toast-box-shadow: 0 0.5rem 1.5rem rgba(40, 40, 40, 0.1);
+    --bs-toast-border-color: rgba(0, 0, 0, 0.1);
+    --bs-toast-border-radius: 0.25rem;
+    --bs-toast-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     --bs-toast-header-color: #6c757d;
     --bs-toast-header-bg: hsla(0, 0%, 100%, 0.85);
     --bs-toast-header-border-color: rgba(0, 0, 0, 0.05);
@@ -5442,14 +5474,13 @@ fieldset:disabled .btn {
     display: none;
 }
 .toast-container {
-    --bs-toast-zindex: 1090;
     max-width: 100%;
     pointer-events: none;
     position: absolute;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    z-index: var(--bs-toast-zindex);
+    z-index: 1090;
 }
 .toast-container > :not(:last-child) {
     margin-bottom: var(--bs-toast-spacing);
@@ -5930,7 +5961,7 @@ fieldset:disabled .btn {
 .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow,
 .bs-popover-top > .popover-arrow {
     bottom: calc(
-        (var(--bs-popover-arrow-height)) * -1 - var(--bs-popover-border-width)
+        var(--bs-popover-arrow-height) * -1 - var(--bs-popover-border-width)
     );
 }
 .bs-popover-auto[data-popper-placement^="top"] > .popover-arrow:after,
@@ -5954,7 +5985,7 @@ fieldset:disabled .btn {
 .bs-popover-end > .popover-arrow {
     height: var(--bs-popover-arrow-width);
     left: calc(
-        (var(--bs-popover-arrow-height)) * -1 - var(--bs-popover-border-width)
+        var(--bs-popover-arrow-height) * -1 - var(--bs-popover-border-width)
     );
     width: var(--bs-popover-arrow-height);
 }
@@ -5979,7 +6010,7 @@ fieldset:disabled .btn {
 .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow,
 .bs-popover-bottom > .popover-arrow {
     top: calc(
-        (var(--bs-popover-arrow-height)) * -1 - var(--bs-popover-border-width)
+        var(--bs-popover-arrow-height) * -1 - var(--bs-popover-border-width)
     );
 }
 .bs-popover-auto[data-popper-placement^="bottom"] > .popover-arrow:after,
@@ -6015,7 +6046,7 @@ fieldset:disabled .btn {
 .bs-popover-start > .popover-arrow {
     height: var(--bs-popover-arrow-width);
     right: calc(
-        (var(--bs-popover-arrow-height)) * -1 - var(--bs-popover-border-width)
+        var(--bs-popover-arrow-height) * -1 - var(--bs-popover-border-width)
     );
     width: var(--bs-popover-arrow-height);
 }
@@ -6317,7 +6348,6 @@ fieldset:disabled .btn {
 .offcanvas-sm,
 .offcanvas-xl,
 .offcanvas-xxl {
-    --bs-offcanvas-zindex: 1045;
     --bs-offcanvas-width: 400px;
     --bs-offcanvas-height: 30vh;
     --bs-offcanvas-padding-x: 1rem;
@@ -6341,7 +6371,7 @@ fieldset:disabled .btn {
         position: fixed;
         transition: transform 0.3s ease-in-out;
         visibility: hidden;
-        z-index: var(--bs-offcanvas-zindex);
+        z-index: 1045;
     }
 }
 @media (max-width: 575.98px) and (prefers-reduced-motion: reduce) {
@@ -6424,7 +6454,7 @@ fieldset:disabled .btn {
         position: fixed;
         transition: transform 0.3s ease-in-out;
         visibility: hidden;
-        z-index: var(--bs-offcanvas-zindex);
+        z-index: 1045;
     }
 }
 @media (max-width: 767.98px) and (prefers-reduced-motion: reduce) {
@@ -6507,7 +6537,7 @@ fieldset:disabled .btn {
         position: fixed;
         transition: transform 0.3s ease-in-out;
         visibility: hidden;
-        z-index: var(--bs-offcanvas-zindex);
+        z-index: 1045;
     }
 }
 @media (max-width: 991.98px) and (prefers-reduced-motion: reduce) {
@@ -6590,7 +6620,7 @@ fieldset:disabled .btn {
         position: fixed;
         transition: transform 0.3s ease-in-out;
         visibility: hidden;
-        z-index: var(--bs-offcanvas-zindex);
+        z-index: 1045;
     }
 }
 @media (max-width: 1199.98px) and (prefers-reduced-motion: reduce) {
@@ -6673,7 +6703,7 @@ fieldset:disabled .btn {
         position: fixed;
         transition: transform 0.3s ease-in-out;
         visibility: hidden;
-        z-index: var(--bs-offcanvas-zindex);
+        z-index: 1045;
     }
 }
 @media (max-width: 1399.98px) and (prefers-reduced-motion: reduce) {
@@ -6755,7 +6785,7 @@ fieldset:disabled .btn {
     position: fixed;
     transition: transform 0.3s ease-in-out;
     visibility: hidden;
-    z-index: var(--bs-offcanvas-zindex);
+    z-index: 1045;
 }
 @media (prefers-reduced-motion: reduce) {
     .offcanvas {
@@ -6941,8 +6971,8 @@ fieldset:disabled .btn {
     color: #000 !important;
 }
 .text-bg-dark {
-    background-color: RGBA(19, 19, 19, var(--bs-bg-opacity, 1)) !important;
-    color: #fff !important;
+    background-color: RGBA(242, 247, 255, var(--bs-bg-opacity, 1)) !important;
+    color: #000 !important;
 }
 .link-primary {
     color: #435ebe !important;
@@ -6994,11 +7024,11 @@ fieldset:disabled .btn {
     color: #f9fafb !important;
 }
 .link-dark {
-    color: #131313 !important;
+    color: #f2f7ff !important;
 }
 .link-dark:focus,
 .link-dark:hover {
-    color: #0f0f0f !important;
+    color: #f5f9ff !important;
 }
 .ratio {
     position: relative;
@@ -7046,6 +7076,7 @@ fieldset:disabled .btn {
 }
 .sticky-bottom,
 .sticky-top {
+    position: -webkit-sticky;
     position: sticky;
     z-index: 1020;
 }
@@ -7054,62 +7085,72 @@ fieldset:disabled .btn {
 }
 @media (min-width: 576px) {
     .sticky-sm-top {
-        position: sticky;
         top: 0;
+    }
+    .sticky-sm-bottom,
+    .sticky-sm-top {
+        position: -webkit-sticky;
+        position: sticky;
         z-index: 1020;
     }
     .sticky-sm-bottom {
         bottom: 0;
-        position: sticky;
-        z-index: 1020;
     }
 }
 @media (min-width: 768px) {
     .sticky-md-top {
-        position: sticky;
         top: 0;
+    }
+    .sticky-md-bottom,
+    .sticky-md-top {
+        position: -webkit-sticky;
+        position: sticky;
         z-index: 1020;
     }
     .sticky-md-bottom {
         bottom: 0;
-        position: sticky;
-        z-index: 1020;
     }
 }
 @media (min-width: 992px) {
     .sticky-lg-top {
-        position: sticky;
         top: 0;
+    }
+    .sticky-lg-bottom,
+    .sticky-lg-top {
+        position: -webkit-sticky;
+        position: sticky;
         z-index: 1020;
     }
     .sticky-lg-bottom {
         bottom: 0;
-        position: sticky;
-        z-index: 1020;
     }
 }
 @media (min-width: 1200px) {
     .sticky-xl-top {
-        position: sticky;
         top: 0;
+    }
+    .sticky-xl-bottom,
+    .sticky-xl-top {
+        position: -webkit-sticky;
+        position: sticky;
         z-index: 1020;
     }
     .sticky-xl-bottom {
         bottom: 0;
-        position: sticky;
-        z-index: 1020;
     }
 }
 @media (min-width: 1400px) {
     .sticky-xxl-top {
-        position: sticky;
         top: 0;
+    }
+    .sticky-xxl-bottom,
+    .sticky-xxl-top {
+        position: -webkit-sticky;
+        position: sticky;
         z-index: 1020;
     }
     .sticky-xxl-bottom {
         bottom: 0;
-        position: sticky;
-        z-index: 1020;
     }
 }
 .hstack {
@@ -7268,6 +7309,7 @@ fieldset:disabled .btn {
     position: fixed !important;
 }
 .position-sticky {
+    position: -webkit-sticky !important;
     position: sticky !important;
 }
 .top-0 {
@@ -8073,7 +8115,7 @@ fieldset:disabled .btn {
 }
 .text-muted {
     --bs-text-opacity: 1;
-    color: #000 !important;
+    color: grey !important;
 }
 .text-black-50 {
     --bs-text-opacity: 1;
@@ -10793,9 +10835,10 @@ fieldset:disabled .btn {
 @font-face {
     font-display: block;
     font-family: bootstrap-icons;
-    src: url(/fonts/vendor/bootstrap-icons/bootstrap-icons.woff2)
+    src: url(../../../assets/fonts/vendor/bootstrap-icons/bootstrap-icons.woff2?ea98e12d2d58747f9fc557577a85042e)
             format("woff2"),
-        url(/fonts/vendor/bootstrap-icons/bootstrap-icons.woff) format("woff");
+        url(../../../assets/fonts/vendor/bootstrap-icons/bootstrap-icons.woff?e559bf06bc84fd9525e61ead369f2a7e)
+            format("woff");
 }
 .bi:before,
 [class*=" bi-"]:before,
@@ -13001,7 +13044,7 @@ fieldset:disabled .btn {
 .bi-folder2:before {
     content: "\f3d9";
 }
-.bi-/fonts:before {
+.bi-fonts:before {
     content: "\f3da";
 }
 .bi-forward-fill:before {
@@ -16373,432 +16416,6 @@ fieldset:disabled .btn {
 .bi-fuel-pump:before {
     content: "\f83e";
 }
-.bi-0-circle-fill:before {
-    content: "\f83f";
-}
-.bi-0-circle:before {
-    content: "\f840";
-}
-.bi-0-square-fill:before {
-    content: "\f841";
-}
-.bi-0-square:before {
-    content: "\f842";
-}
-.bi-rocket-fill:before {
-    content: "\f843";
-}
-.bi-rocket-takeoff-fill:before {
-    content: "\f844";
-}
-.bi-rocket-takeoff:before {
-    content: "\f845";
-}
-.bi-rocket:before {
-    content: "\f846";
-}
-.bi-stripe:before {
-    content: "\f847";
-}
-.bi-subscript:before {
-    content: "\f848";
-}
-.bi-superscript:before {
-    content: "\f849";
-}
-.bi-trello:before {
-    content: "\f84a";
-}
-.bi-envelope-at-fill:before {
-    content: "\f84b";
-}
-.bi-envelope-at:before {
-    content: "\f84c";
-}
-.bi-regex:before {
-    content: "\f84d";
-}
-.bi-text-wrap:before {
-    content: "\f84e";
-}
-.bi-sign-dead-end-fill:before {
-    content: "\f84f";
-}
-.bi-sign-dead-end:before {
-    content: "\f850";
-}
-.bi-sign-do-not-enter-fill:before {
-    content: "\f851";
-}
-.bi-sign-do-not-enter:before {
-    content: "\f852";
-}
-.bi-sign-intersection-fill:before {
-    content: "\f853";
-}
-.bi-sign-intersection-side-fill:before {
-    content: "\f854";
-}
-.bi-sign-intersection-side:before {
-    content: "\f855";
-}
-.bi-sign-intersection-t-fill:before {
-    content: "\f856";
-}
-.bi-sign-intersection-t:before {
-    content: "\f857";
-}
-.bi-sign-intersection-y-fill:before {
-    content: "\f858";
-}
-.bi-sign-intersection-y:before {
-    content: "\f859";
-}
-.bi-sign-intersection:before {
-    content: "\f85a";
-}
-.bi-sign-merge-left-fill:before {
-    content: "\f85b";
-}
-.bi-sign-merge-left:before {
-    content: "\f85c";
-}
-.bi-sign-merge-right-fill:before {
-    content: "\f85d";
-}
-.bi-sign-merge-right:before {
-    content: "\f85e";
-}
-.bi-sign-no-left-turn-fill:before {
-    content: "\f85f";
-}
-.bi-sign-no-left-turn:before {
-    content: "\f860";
-}
-.bi-sign-no-parking-fill:before {
-    content: "\f861";
-}
-.bi-sign-no-parking:before {
-    content: "\f862";
-}
-.bi-sign-no-right-turn-fill:before {
-    content: "\f863";
-}
-.bi-sign-no-right-turn:before {
-    content: "\f864";
-}
-.bi-sign-railroad-fill:before {
-    content: "\f865";
-}
-.bi-sign-railroad:before {
-    content: "\f866";
-}
-.bi-building-add:before {
-    content: "\f867";
-}
-.bi-building-check:before {
-    content: "\f868";
-}
-.bi-building-dash:before {
-    content: "\f869";
-}
-.bi-building-down:before {
-    content: "\f86a";
-}
-.bi-building-exclamation:before {
-    content: "\f86b";
-}
-.bi-building-fill-add:before {
-    content: "\f86c";
-}
-.bi-building-fill-check:before {
-    content: "\f86d";
-}
-.bi-building-fill-dash:before {
-    content: "\f86e";
-}
-.bi-building-fill-down:before {
-    content: "\f86f";
-}
-.bi-building-fill-exclamation:before {
-    content: "\f870";
-}
-.bi-building-fill-gear:before {
-    content: "\f871";
-}
-.bi-building-fill-lock:before {
-    content: "\f872";
-}
-.bi-building-fill-slash:before {
-    content: "\f873";
-}
-.bi-building-fill-up:before {
-    content: "\f874";
-}
-.bi-building-fill-x:before {
-    content: "\f875";
-}
-.bi-building-fill:before {
-    content: "\f876";
-}
-.bi-building-gear:before {
-    content: "\f877";
-}
-.bi-building-lock:before {
-    content: "\f878";
-}
-.bi-building-slash:before {
-    content: "\f879";
-}
-.bi-building-up:before {
-    content: "\f87a";
-}
-.bi-building-x:before {
-    content: "\f87b";
-}
-.bi-buildings-fill:before {
-    content: "\f87c";
-}
-.bi-buildings:before {
-    content: "\f87d";
-}
-.bi-bus-front-fill:before {
-    content: "\f87e";
-}
-.bi-bus-front:before {
-    content: "\f87f";
-}
-.bi-ev-front-fill:before {
-    content: "\f880";
-}
-.bi-ev-front:before {
-    content: "\f881";
-}
-.bi-globe-americas:before {
-    content: "\f882";
-}
-.bi-globe-asia-australia:before {
-    content: "\f883";
-}
-.bi-globe-central-south-asia:before {
-    content: "\f884";
-}
-.bi-globe-europe-africa:before {
-    content: "\f885";
-}
-.bi-house-add-fill:before {
-    content: "\f886";
-}
-.bi-house-add:before {
-    content: "\f887";
-}
-.bi-house-check-fill:before {
-    content: "\f888";
-}
-.bi-house-check:before {
-    content: "\f889";
-}
-.bi-house-dash-fill:before {
-    content: "\f88a";
-}
-.bi-house-dash:before {
-    content: "\f88b";
-}
-.bi-house-down-fill:before {
-    content: "\f88c";
-}
-.bi-house-down:before {
-    content: "\f88d";
-}
-.bi-house-exclamation-fill:before {
-    content: "\f88e";
-}
-.bi-house-exclamation:before {
-    content: "\f88f";
-}
-.bi-house-gear-fill:before {
-    content: "\f890";
-}
-.bi-house-gear:before {
-    content: "\f891";
-}
-.bi-house-lock-fill:before {
-    content: "\f892";
-}
-.bi-house-lock:before {
-    content: "\f893";
-}
-.bi-house-slash-fill:before {
-    content: "\f894";
-}
-.bi-house-slash:before {
-    content: "\f895";
-}
-.bi-house-up-fill:before {
-    content: "\f896";
-}
-.bi-house-up:before {
-    content: "\f897";
-}
-.bi-house-x-fill:before {
-    content: "\f898";
-}
-.bi-house-x:before {
-    content: "\f899";
-}
-.bi-person-add:before {
-    content: "\f89a";
-}
-.bi-person-down:before {
-    content: "\f89b";
-}
-.bi-person-exclamation:before {
-    content: "\f89c";
-}
-.bi-person-fill-add:before {
-    content: "\f89d";
-}
-.bi-person-fill-check:before {
-    content: "\f89e";
-}
-.bi-person-fill-dash:before {
-    content: "\f89f";
-}
-.bi-person-fill-down:before {
-    content: "\f8a0";
-}
-.bi-person-fill-exclamation:before {
-    content: "\f8a1";
-}
-.bi-person-fill-gear:before {
-    content: "\f8a2";
-}
-.bi-person-fill-lock:before {
-    content: "\f8a3";
-}
-.bi-person-fill-slash:before {
-    content: "\f8a4";
-}
-.bi-person-fill-up:before {
-    content: "\f8a5";
-}
-.bi-person-fill-x:before {
-    content: "\f8a6";
-}
-.bi-person-gear:before {
-    content: "\f8a7";
-}
-.bi-person-lock:before {
-    content: "\f8a8";
-}
-.bi-person-slash:before {
-    content: "\f8a9";
-}
-.bi-person-up:before {
-    content: "\f8aa";
-}
-.bi-scooter:before {
-    content: "\f8ab";
-}
-.bi-taxi-front-fill:before {
-    content: "\f8ac";
-}
-.bi-taxi-front:before {
-    content: "\f8ad";
-}
-.bi-amd:before {
-    content: "\f8ae";
-}
-.bi-database-add:before {
-    content: "\f8af";
-}
-.bi-database-check:before {
-    content: "\f8b0";
-}
-.bi-database-dash:before {
-    content: "\f8b1";
-}
-.bi-database-down:before {
-    content: "\f8b2";
-}
-.bi-database-exclamation:before {
-    content: "\f8b3";
-}
-.bi-database-fill-add:before {
-    content: "\f8b4";
-}
-.bi-database-fill-check:before {
-    content: "\f8b5";
-}
-.bi-database-fill-dash:before {
-    content: "\f8b6";
-}
-.bi-database-fill-down:before {
-    content: "\f8b7";
-}
-.bi-database-fill-exclamation:before {
-    content: "\f8b8";
-}
-.bi-database-fill-gear:before {
-    content: "\f8b9";
-}
-.bi-database-fill-lock:before {
-    content: "\f8ba";
-}
-.bi-database-fill-slash:before {
-    content: "\f8bb";
-}
-.bi-database-fill-up:before {
-    content: "\f8bc";
-}
-.bi-database-fill-x:before {
-    content: "\f8bd";
-}
-.bi-database-fill:before {
-    content: "\f8be";
-}
-.bi-database-gear:before {
-    content: "\f8bf";
-}
-.bi-database-lock:before {
-    content: "\f8c0";
-}
-.bi-database-slash:before {
-    content: "\f8c1";
-}
-.bi-database-up:before {
-    content: "\f8c2";
-}
-.bi-database-x:before {
-    content: "\f8c3";
-}
-.bi-database:before {
-    content: "\f8c4";
-}
-.bi-houses-fill:before {
-    content: "\f8c5";
-}
-.bi-houses:before {
-    content: "\f8c6";
-}
-.bi-nvidia:before {
-    content: "\f8c7";
-}
-.bi-person-vcard-fill:before {
-    content: "\f8c8";
-}
-.bi-person-vcard:before {
-    content: "\f8c9";
-}
-.bi-sina-weibo:before {
-    content: "\f8ca";
-}
-.bi-tencent-qq:before {
-    content: "\f8cb";
-}
-.bi-wikipedia:before {
-    content: "\f8cc";
-}
 [class*=" bi-"]:before,
 [class^="bi-"]:before,
 body .bi:before {
@@ -17033,6 +16650,20 @@ body .bi:before {
     background-color: #e6fdff;
     color: #00474d;
 }
+.btn.btn-danger,
+.btn.btn-info,
+.btn.btn-primary,
+.btn.btn-secondary,
+.btn.btn-success,
+.btn.btn-warning {
+    color: #fff;
+}
+.btn.btn-light {
+    color: #607080;
+}
+.btn.btn-dark {
+    color: #fff;
+}
 .btn-block {
     width: 100%;
 }
@@ -17104,6 +16735,9 @@ body .bi:before {
 }
 .card .card-content {
     position: relative;
+}
+.card .card-title {
+    font-size: 1.2rem;
 }
 .card .card-body {
     padding: 1.5rem;
@@ -17447,15 +17081,15 @@ body .bi:before {
     box-shadow: none;
 }
 .form-check .form-check-input.form-check-dark {
-    background-color: #131313;
-    border-color: #131313;
+    background-color: #f2f7ff;
+    border-color: #f2f7ff;
 }
 .form-check .form-check-input.form-check-dark:not(:checked) {
     background-color: transparent;
     border: 1px solid #ced4da;
 }
 .form-check .form-check-input.form-check-dark.form-check-glow {
-    box-shadow: 0 0 5px #2d2d2d;
+    box-shadow: 0 0 5px #fff;
 }
 .form-check .form-check-input.form-check-dark.form-check-glow:not(:checked) {
     box-shadow: none;
@@ -17505,8 +17139,8 @@ body .bi:before {
     border-color: #f8f9fa;
 }
 .form-check.form-check-dark .form-check-input {
-    background-color: #131313;
-    border-color: #131313;
+    background-color: #f2f7ff;
+    border-color: #f2f7ff;
 }
 .dataTable-input {
     -webkit-appearance: none;
@@ -17760,23 +17394,12 @@ body .bi:before {
     position: absolute;
     width: 100%;
 }
-.layout-navbar {
-    --navbar-height: 90px;
-    display: block !important;
-}
-.navbar-fixed > header {
-    display: unset;
-    height: var(--navbar-height);
-}
-.navbar-fixed .navbar-top {
-    background-color: var(--bs-body-bg);
-    position: sticky;
-    top: 0;
-    width: inherit;
-    z-index: 9;
+.navbar-fixed {
+    background-color: #fff;
+    position: fixed;
 }
 .navbar {
-    height: var(--navbar-height);
+    height: 90px;
     padding: 1.5rem;
 }
 .navbar .navbar-brand img {
@@ -17879,9 +17502,6 @@ body .bi:before {
 .layout-horizontal .main-navbar ul .menu-link span {
     height: 20px;
 }
-.layout-horizontal .main-navbar ul .menu-link span > i {
-    margin-right: 3px;
-}
 .layout-horizontal .main-navbar ul > .menu-item {
     position: relative;
 }
@@ -17896,7 +17516,7 @@ body .bi:before {
     content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%23ccc' opacity='.7' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
     display: block;
     position: absolute;
-    right: -3px;
+    right: 0;
     top: 7px;
 }
 .layout-horizontal .main-navbar ul > .menu-item:hover .menu-link {
@@ -18084,9 +17704,9 @@ body .bi:before {
     box-shadow: 0 2px 5px rgba(248, 249, 250, 0.3);
 }
 .pagination.pagination-dark .page-item.active .page-link {
-    background-color: #131313;
-    border-color: #131313;
-    box-shadow: 0 2px 5px hsla(0, 0%, 7%, 0.3);
+    background-color: #f2f7ff;
+    border-color: #f2f7ff;
+    box-shadow: 0 2px 5px rgba(242, 247, 255, 0.3);
 }
 .page-item:not(.active) .page-link:hover {
     color: #000;
@@ -18143,56 +17763,56 @@ body .bi:before {
 }
 .progress.progress-primary .progress-bar {
     background-color: #435ebe;
-    border-radius: 0.18rem;
+    border-radius: 0.25rem;
 }
 .progress.progress-secondary {
     overflow: visible;
 }
 .progress.progress-secondary .progress-bar {
     background-color: #6c757d;
-    border-radius: 0.18rem;
+    border-radius: 0.25rem;
 }
 .progress.progress-success {
     overflow: visible;
 }
 .progress.progress-success .progress-bar {
     background-color: #198754;
-    border-radius: 0.18rem;
+    border-radius: 0.25rem;
 }
 .progress.progress-info {
     overflow: visible;
 }
 .progress.progress-info .progress-bar {
     background-color: #0dcaf0;
-    border-radius: 0.18rem;
+    border-radius: 0.25rem;
 }
 .progress.progress-warning {
     overflow: visible;
 }
 .progress.progress-warning .progress-bar {
     background-color: #ffc107;
-    border-radius: 0.18rem;
+    border-radius: 0.25rem;
 }
 .progress.progress-danger {
     overflow: visible;
 }
 .progress.progress-danger .progress-bar {
     background-color: #dc3545;
-    border-radius: 0.18rem;
+    border-radius: 0.25rem;
 }
 .progress.progress-light {
     overflow: visible;
 }
 .progress.progress-light .progress-bar {
     background-color: #f8f9fa;
-    border-radius: 0.18rem;
+    border-radius: 0.25rem;
 }
 .progress.progress-dark {
     overflow: visible;
 }
 .progress.progress-dark .progress-bar {
-    background-color: #131313;
-    border-radius: 0.18rem;
+    background-color: #f2f7ff;
+    border-radius: 0.25rem;
 }
 .progress.progress-sm {
     height: 0.4rem;
@@ -18258,7 +17878,7 @@ body .bi:before {
     display: none;
 }
 #main {
-    min-height: 100vh;
+    margin-left: 300px;
     padding: 2rem;
 }
 @media screen and (max-width: 1199px) {
@@ -18276,15 +17896,6 @@ body .bi:before {
 }
 #main #main-content {
     padding: 2rem;
-}
-#main,
-#main-content {
-    display: flex;
-    flex-direction: column;
-}
-#main-content,
-.page-heading {
-    flex-grow: 1;
 }
 .page-heading {
     margin: 0 0 2rem;

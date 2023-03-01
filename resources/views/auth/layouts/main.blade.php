@@ -1,4 +1,4 @@
 @include('frontend.partials.meta')
-@include('frontend.partials.navbar')
+@include('auth.partials.navbar')
 @yield('container')
 @include('frontend.partials.footer')

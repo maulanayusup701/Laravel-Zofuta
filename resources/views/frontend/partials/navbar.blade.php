@@ -7,8 +7,32 @@
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-                    <li><a class="nav-link scrollto" href="/login">Login</a></li>
-                    <li><a class="nav-link scrollto" href="/register">Register</a></li>
+                    @auth
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hay, {{ auth()->user()->fullname }}
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/dashboard"><i
+                                            class="bi bi-layout-text-sidebar-reverse"></i>
+                                        My Dashboard</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <form action="/logout" method="post">
+                                        @csrf
+                                        <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i>
+                                            Logout</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </li>
+                    @else
+                        <li><a class="nav-link scrollto" href="/login">Login</a></li>
+                        <li><a class="nav-link scrollto" href="/register">Register</a></li>
+                    @endauth
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

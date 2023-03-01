@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/logo.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="{{ asset('assets/img/logo.png') }}" rel="icon">
+    <link href="{{ asset('assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -19,21 +19,21 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Vendor CSS Files Auth -->
-    <link rel="stylesheet" href="assets/css/main/app.css" />
-    <link rel="stylesheet" href="assets/css/pages/auth.css" />
-    <link rel="shortcut icon" href="assets/images/logo/favicon.svg" type="image/x-icon" />
-    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/png" />
+    <link rel="stylesheet" href="{{ asset('assets/css/main/app.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assets/css/pages/auth.css') }}" />
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo/favicon.svg') }}" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo/favicon.png') }}" type="image/png" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
 
     <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 </head>

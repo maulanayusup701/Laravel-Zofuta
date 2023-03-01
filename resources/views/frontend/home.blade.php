@@ -3,7 +3,6 @@
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center justify-content-center">
         <div class="container" data-aos="fade-up">
-
             <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
                 <div class="col-xl-6 col-lg-8">
                     <h1>Zona Putsal Purwakarta<span>.</span></h1>
@@ -15,6 +14,7 @@
     </section><!-- End Hero -->
 
     <main id="main">
+
         <!-- =======  Section ======= -->
         <section id="gor" class="gor">
             <div class="container" data-aos="fade-up">
@@ -77,11 +77,8 @@
                             </div>
                             <div class="text"><button type="submit">Send Message</button></div>
                         </form>
-
                     </div>
-
                 </div>
-
             </div>
         </section><!-- End Contact Section -->
 
@@ -93,22 +90,22 @@
                 </div>
                 <div class="clients-slider swiper">
                     <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="assets/img/clients/client-1.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-2.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-3.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-4.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-5.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-6.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-7.png" class="img-fluid"
-                                alt=""></div>
-                        <div class="swiper-slide"><img src="assets/img/clients/client-8.png" class="img-fluid"
-                                alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-1.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-2.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-3.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-4.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-5.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-6.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-7.png') }}"
+                                class="img-fluid" alt=""></div>
+                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-8.png') }}"
+                                class="img-fluid" alt=""></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>

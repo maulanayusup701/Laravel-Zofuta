@@ -5,7 +5,7 @@
         <div id="auth">
             <div class="row h-100 justify-content-center">
                 <div id="auth-left" class="col-md-5">
-                    <h1 class="auth-title">Sign Up.</h1>
+                    <h1 class="auth-title mt-5">Sign Up.</h1>
                     <p class="auth-subtitle mb-3">
                         Input your data to register to our website.
                     </p>
