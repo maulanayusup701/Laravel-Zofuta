@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->string('id_user');
-            $table->string('id_gor');
+            $table->string('user_id');
+            $table->string('gor_id');
             $table->string('id_lapangan');
             $table->string('jam_mulai');
             $table->string('jam_selesai');

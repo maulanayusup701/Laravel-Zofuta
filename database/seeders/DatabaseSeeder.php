@@ -6,7 +6,6 @@ use App\Models\Gor;
 use App\Models\Role;
 use App\Models\User;
 use App\Models\Field;
-use App\Models\Payment;
 use App\Models\Schedule;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -72,7 +71,7 @@ class DatabaseSeeder extends Seeder
         ]);
         Gor::factory()->create([
             'nama_gor' => 'Golden Futsal',
-            'slug_gor' => 'gulden-futsal',
+            'slug_gor' => 'golden-futsal',
             'alamat_gor' => 'Jl. Ipik Gandamanah No.9, Munjuljaya, Kec. Purwakarta, Kabupaten Purwakarta, Jawa Barat 41117',
             'latitude' => '-',
             'longtitude' => '-',
@@ -198,320 +197,52 @@ class DatabaseSeeder extends Seeder
             'longtitude' => '-',
             'foto_gor' => 'greengardensportcenter.png',
         ]);
-
         //table field
         Field::factory()->create([
-            'id_gor' => '1',
+            'gor_id' => '1',
             'nama_lapangan' => 'Lapangan 1',
             'slug_lapangan' => 'lapangan-1',
             'keterangan_lapangan' => 'Rumput Sintetis',
             'harga_sewa' => '100000',
             'foto_lapangan' => 'lapangan1.png',
         ]);
-        //table field
         Field::factory()->create([
-            'id_gor' => '1',
+            'gor_id' => '1',
             'nama_lapangan' => 'Lapangan 2',
             'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '2',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
             'keterangan_lapangan' => 'Rumput Sintetis',
             'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '2',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
             'foto_lapangan' => 'lapangan2.png',
         ]);
         Field::factory()->create([
-            'id_gor' => '3',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
+            'gor_id' => '1',
+            'nama_lapangan' => 'Lapangan 3',
+            'slug_lapangan' => 'lapangan-3',
             'keterangan_lapangan' => 'Rumput Sintetis',
             'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '3',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
+            'foto_lapangan' => 'lapangan3.png',
         ]);
         Field::factory()->create([
-            'id_gor' => '4',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
+            'gor_id' => '1',
+            'nama_lapangan' => 'Lapangan 4',
+            'slug_lapangan' => 'lapangan-4',
             'keterangan_lapangan' => 'Rumput Sintetis',
             'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '4',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
             'foto_lapangan' => 'lapangan2.png',
         ]);
-        Field::factory()->create([
-            'id_gor' => '5',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '5',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '6',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '6',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '7',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '7',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '8',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '8',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '9',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '9',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '10',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '10',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '11',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '11',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '12',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '12',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '13',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '13',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '14',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '14',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '15',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '15',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '16',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '16',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-        Field::factory()->create([
-            'id_gor' => '17',
-            'nama_lapangan' => 'Lapangan 1',
-            'slug_lapangan' => 'lapangan-1',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan1.png',
-        ]);
-        //table field
-        Field::factory()->create([
-            'id_gor' => '17',
-            'nama_lapangan' => 'Lapangan 2',
-            'slug_lapangan' => 'lapangan-2',
-            'keterangan_lapangan' => 'Lapang Karet',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
-
-        //table Schedule
         Schedule::factory()->create([
-            'id_lapangan' => '1',
-            'id_gor' => '1',
+            'field_id' => '1',
+            'gor_id' => '1',
             'status' => 'Available',
-            'waktu' => '06.00 - 07.00',
-            'tanggal' => '2022-11-23'
+            'waktu' => '2022-11-12',
+            'tanggal' => '2022-11-12',
         ]);
-
-        //table Payment
-        payment::factory()->create([
-            'id_gor' => '1',
-            'id_lapangan' => '1',
-            'id_user' => '1',
-            'jam_mulai' => '06.00',
-            'jam_selesai' => '07.00',
-            'tanggal' => '2022-11-23',
-            'durasi_sewa' => '1 jam',
-            'foto_struk' => 'struk.png',
-            'status' => 'booked',
-            'waktu' => '2022-11-23',
-            'subtotal' => '100000'
+        Schedule::factory()->create([
+            'field_id' => '1',
+            'gor_id' => '2',
+            'status' => 'Booked',
+            'waktu' => '2022-11-12',
+            'tanggal' => '2022-11-12',
         ]);
     }
 }

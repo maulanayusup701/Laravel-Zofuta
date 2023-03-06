@@ -53,6 +53,12 @@
                 <li class="sidebar-item">
                     <a href="index.html" class='sidebar-link'>
                         <i class="bi bi-person-fill"></i>
+                        <span>Admin </span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="index.html" class='sidebar-link'>
+                        <i class="bi bi-people-fill"></i>
                         <span>User</span>
                     </a>
                 </li>

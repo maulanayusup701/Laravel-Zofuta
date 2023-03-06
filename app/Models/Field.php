@@ -9,4 +9,15 @@ class Field extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
+    protected $with = ['schedule'];
+
+    public function gor()
+    {
+        return $this->BelongsTo(Gor::class);
+    }
+
+    public function schedule()
+    {
+        return $this->hasMany(schedule::class);
+    }
 }

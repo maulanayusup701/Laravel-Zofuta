@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class DashboardController extends Controller
 {
@@ -12,7 +14,10 @@ class DashboardController extends Controller
     public function index()
     {
         return view('backend.dev.index', [
-            'title' => 'Dashboard | Zofuta   '
+            'title' => 'Dashboard | Zofuta',
+            'countUsers' => DB::table('users')->where('role_id', '3')->get()->count(),
+            'countGors' => DB::table('gors')->get()->count(),
+            'countfields' => DB::table('fields')->get()->count()
         ]);
     }
 

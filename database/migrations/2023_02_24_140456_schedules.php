@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
-            $table->string('id_lapangan');
-            $table->string('id_gor');
+            $table->foreignId('field_id');
+            $table->string('gor_id');
             $table->string('status');
             $table->string('waktu');
             $table->string('tanggal');
