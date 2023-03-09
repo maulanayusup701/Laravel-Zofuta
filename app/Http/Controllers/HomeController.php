@@ -23,7 +23,7 @@ class HomeController extends Controller
     }
     public function show(Gor $gor, Field $field)
     {
-        return view('frontend.detail_gor', [
+        return view('frontend.tes', [
             'title' => '| Zofuta',
             'gor' => $gor,
             'schedule' => $field

@@ -214,22 +214,6 @@ class DatabaseSeeder extends Seeder
             'harga_sewa' => '100000',
             'foto_lapangan' => 'lapangan2.png',
         ]);
-        Field::factory()->create([
-            'gor_id' => '1',
-            'nama_lapangan' => 'Lapangan 3',
-            'slug_lapangan' => 'lapangan-3',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan3.png',
-        ]);
-        Field::factory()->create([
-            'gor_id' => '1',
-            'nama_lapangan' => 'Lapangan 4',
-            'slug_lapangan' => 'lapangan-4',
-            'keterangan_lapangan' => 'Rumput Sintetis',
-            'harga_sewa' => '100000',
-            'foto_lapangan' => 'lapangan2.png',
-        ]);
         Schedule::factory()->create([
             'field_id' => '1',
             'gor_id' => '1',

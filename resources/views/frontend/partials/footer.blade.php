@@ -46,7 +46,11 @@
 
 <!-- Template Main JS File -->
 <script src="{{ asset('assets/js/main.js') }}"></script>
-
+<script type="text/javascript">
+    $(function() {
+        $('#datepicker').datepicker();
+    });
+</script>
 </body>
 
 </html>

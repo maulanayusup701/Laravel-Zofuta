@@ -1,4 +1,5 @@
 @extends('auth.layouts.main')
+
 @section('container')
     <section id="features" class="features mt-5">
         <div class="container aos-init aos-animate mt-5" data-aos="fade-up">
@@ -55,5 +56,96 @@
                     @endforeach
                 </div>
             </div>
+    </section>
+
+    <section id="team" class="team ">
+        <div class="container rounded aos-init aos-animate" data-aos="fade-up">
+            <div class=" section-title text-center">
+                <p>Form Booking</p>
+            </div>
+            {{-- <div class="row mt-2"> --}}
+            <form class="needs-validation col-12" novalidate="">
+                <div class="row g-3">
+                    <div class="col-lg-12">
+                        <label for="country" class="form-label">Pilih Lapangan</label>
+                        <select class="form-select" id="country" required="">
+                            <option value="">--Pilih Lapangan--</option>
+                            @foreach ($gor->field as $field)
+                                <option value="{{ $field->nama_lapangan }}">{{ $field->nama_lapangan }}</option>
+                            @endforeach
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="country" class="form-label">Pilih Tanggal Main</label>
+                        <div class="input-group date" id="datepicker">
+                            <input type="text" class="form-control" placeholder="--Pilih Tanggal Main--">
+                            <span class="input-group-append">
+                            </span>
+                        </div>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="country" class="form-label">Jam Mulai</label>
+                        <select class="form-select" id="country" required="">
+                            <option value="">--Pilih Jam Mulai--</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="state" class="form-label">Jam Selesai</label>
+                        <select class="form-select" id="state" required="">
+                            <option value="">--Pilih Jam Selesai--</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                            <option value="17:00">17:00</option>
+                            <option value="18:00">18:00</option>
+                            <option value="19:00">19:00</option>
+                            <option value="20:00">20:00</option>
+                            <option value="21:00">21:00</option>
+                            <option value="22:00">22:00</option>
+                            <option value="23:00">23:00</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-4">
+                <div class="form-check">
+                    <span class="text-success">Harga</span>
+                    <h4 class="mb-3">Rp.0 Ribu</h4>
+                </div>
+                <hr class="my-4">
+                <button class="w-100 btn btn-success btn-lg" type="submit" data-bs-toggle="modal"
+                    data-bs-target="#staticBackdrop">Checkout</button>
+            </form>
+        </div>
+        </div>
     </section>
 @endsection
