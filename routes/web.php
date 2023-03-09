@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\ContactController;
+use App\Http\Controllers\OrderController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -34,6 +36,8 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
     Route::get('/gor/{gor:slug_gor}', 'show');
 });
+
+Route::post('/orderStore', [OrderController::class, 'orderStore']);
 Route::resource('/dashboard', DashboardController::class)->middleware('auth');
 
 Route::post('/contact', [ContactController::class, 'index'])->middleware('guest');

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('user_id');
             $table->string('gor_id');
-            $table->string('id_lapangan');
+            $table->string('field_id');
             $table->string('jam_mulai');
             $table->string('jam_selesai');
             $table->string('tanggal');

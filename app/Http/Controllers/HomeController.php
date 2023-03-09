@@ -4,16 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Models\Gor;
 use App\Models\Field;
+use Illuminate\Support\Facades\Request;
 
 class HomeController extends Controller
 {
-    // public function index()
-    // {
-    //     return view('frontend.home', [
-    //         'title' => 'Home | Zofuta',
-    //         'gors' => Gor::with('field')->paginate(6)
-    //     ]);
-    // }
     public function index()
     {
         return view('frontend.home', [
