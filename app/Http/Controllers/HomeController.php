@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Gor;
 use App\Models\Field;
+use App\Models\Payment;
 use Illuminate\Support\Facades\Request;
 
 class HomeController extends Controller
@@ -15,12 +16,13 @@ class HomeController extends Controller
             'gors' => Gor::with('field')->paginate(6)
         ]);
     }
-    public function show(Gor $gor, Field $field)
+    public function show(Gor $gor, Field $field, Payment $payment)
     {
-        return view('frontend.tes', [
+        return view('frontend.detail_gor', [
             'title' => '| Zofuta',
             'gor' => $gor,
-            'schedule' => $field
+            'schedule' => $field,
+            'payment' => $payment
         ]);
     }
 }

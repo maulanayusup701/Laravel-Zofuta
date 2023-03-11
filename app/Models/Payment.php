@@ -9,4 +9,19 @@ class Payment extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
+    protected $with = ['user'];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function field()
+    {
+        return $this->hasOne(Field::class);
+    }
+    public function gor()
+    {
+        return $this->hasOne(Gor::class);
+    }
 }

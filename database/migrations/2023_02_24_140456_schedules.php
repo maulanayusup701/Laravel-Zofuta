@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('schedules', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id');
             $table->foreignId('field_id');
-            $table->string('gor_id');
+            $table->foreignId('gor_id');
             $table->string('status');
             $table->string('waktu');
             $table->string('tanggal');

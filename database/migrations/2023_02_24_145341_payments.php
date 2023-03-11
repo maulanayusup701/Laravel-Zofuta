@@ -13,17 +13,15 @@ return new class extends Migration
     {
         Schema::create('payments', function (Blueprint $table) {
             $table->id();
-            $table->string('user_id');
-            $table->string('gor_id');
-            $table->string('field_id');
+            $table->foreignId('user_id');
+            $table->foreignId('gor_id');
+            $table->foreignId('field_id');
             $table->string('jam_mulai');
-            $table->string('jam_selesai');
-            $table->string('tanggal');
+            $table->string('durasi');
+            $table->string('tanggal_main');
             $table->string('subtotal');
-            $table->string('durasi_sewa');
             $table->string('foto_struk');
             $table->string('status');
-            $table->string('waktu');
             $table->timestamps();
         });
     }

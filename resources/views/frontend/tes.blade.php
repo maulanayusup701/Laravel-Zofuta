@@ -9,16 +9,18 @@
             <div class="row g-3 mt-5">
                 {{-- mt-5 --}}
                 <div class="col-lg-12 mt-5">
-                    <label for="namaLapangan" class="form-label">Pilih Lapangan</label>
-                    <select class="form-select  @error('namaLapangan') is-invalid @enderror" id="namaLapangan"
-                        nama="namaLapangan" required="">
+                    <span class="hidden">{{ $gor->id }}</span>
+                    <label for="field_id" class="form-label">Pilih Lapangan</label>
+                    <select class="form-select  @error('field_id') is-invalid @enderror" id="field_id" nama="field_id"
+                        required>
                         <option value="">--Pilih Lapangan--</option>
                         @foreach ($gor->field as $field)
-                            <option value="{{ $field->nama_lapangan }}">{{ $field->nama_lapangan }}</option>
+                            <option value="{{ $field->field_id }}" data-harga="{{ $field->harga_sewa }}">
+                                {{ $field->nama_lapangan }}</option>
                         @endforeach
                     </select>
                     <div class="invalid-feedback">
-                        @error('namaLapangan')
+                        @error('field_id')
                             <div class="invalid-feedback">
                                 {{ $message }}
                             </div>
@@ -28,12 +30,17 @@
                 <div class="col-lg-4">
                     <label for="country" class="form-label">Pilih Tanggal Main</label>
                     <div class="input-group date" id="datepicker">
-                        <input type="text" class="form-control" placeholder="--Pilih Tanggal Main--">
+                        <input type="text" class="form-control @error('tanggal_main') is-invalid @enderror"
+                            id="tanggal_main" placeholder="--Pilih Tanggal Main--" name="tanggal_main">
                         <span class="input-group-append">
                         </span>
                     </div>
                     <div class="invalid-feedback">
-                        Please select a valid country.
+                        @error('tanggal_main')
+                            <div class="invalid-feedback">
+                                {{ $message }}
+                            </div>
+                        @enderror
                     </div>
                 </div>
                 <div class="col-lg-4">
@@ -64,7 +71,8 @@
                 </div>
                 <div class="col-lg-4">
                     <label for="jam_selesai" class="form-label">Jam Selesai</label>
-                    <select class="form-select  @error('jam_selesai') is-invalid @enderror" id="jam_selesai" required>
+                    <select class="form-select  @error('jam_selesai') is-invalid @enderror" id="jam_selesai"
+                        name="jam_selesai" required>
                         <option value="">--Pilih Jam Selesai--</option>
                         <option value="10:00">10:00</option>
                         <option value="11:00">11:00</option>
@@ -96,9 +104,7 @@
                 <button class="w-100 btn btn-success btn-lg" type="submit" data-bs-toggle="modal"
                     data-bs-target="#staticBackdrop">Checkout
                 </button>
+            </div>
         </form>
-    </div>
-    </div>
-    </div>
-    </section>
-@endsection
+        </section>
+    @endsection

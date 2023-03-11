@@ -9,13 +9,14 @@ class Schedule extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
+    protected $with = ['user'];
 
     public function field()
     {
         return $this->belongsTo(Field::class);
     }
-    public function schedle()
+    public function user()
     {
-        return $this->belongsTo(Schedule::class);
+        return $this->belongsTo(User::class);
     }
 }

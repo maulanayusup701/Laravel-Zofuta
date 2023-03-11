@@ -3,10 +3,11 @@
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\DashboardDevController;
 
 /*
 |--------------------------------------------------------------------------
@@ -38,10 +39,11 @@ Route::controller(HomeController::class)->group(function () {
 });
 
 Route::post('/orderStore', [OrderController::class, 'orderStore']);
-Route::resource('/dashboard', DashboardController::class)->middleware('auth');
 
 Route::post('/contact', [ContactController::class, 'index'])->middleware('guest');
 
+route::get('/dashboarddev', [DashboardDevController::class, 'index'])->middleware('dev');
+route::get('/dashboardadmin', [DashboardAdminController::class, 'index'])->middleware('admin');
 
 
 

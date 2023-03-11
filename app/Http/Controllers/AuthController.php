@@ -46,8 +46,16 @@ class AuthController extends Controller
             'password' => 'required'
         ]);
         if (Auth::attempt($credentials)) {
-            $request->session()->regenerate();
-            return redirect()->intended('/dashboard');
+            if (Auth::user()->role_id == 1) {
+                $request->session()->regenerate();
+                return redirect()->intended('/dashboarddev');
+            } else if (Auth::user()->role_id == 2) {
+                $request->session()->regenerate();
+                return redirect()->intended('/dashboardadmin');
+            } else if (Auth::user()->role_id == 3) {
+                $request->session()->regenerate();
+                return redirect()->intended('/');
+            }
         }
         return back()->with('loginError', 'Login failed!');
     }
