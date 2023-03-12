@@ -12,8 +12,7 @@ class OrderController extends Controller
         $field = explode('|', $request->input('field'));
         $field_id = [0];
         $field_harga_sewa = [1];
-        $user = auth()->user()->fullname;
-        $durasi = $request->input('durasi');
+
         $waktu_now = Carbon::now();
         $day_now = Carbon::now();
         $tanggal_main = $request->input('tanggal_main');
@@ -21,26 +20,29 @@ class OrderController extends Controller
         $jamconv = Carbon::createFromFormat('H:m', $jam_mulai);
         $tanggalconv = Carbon::createFromFormat('d/m/Y', $tanggal_main);
 
+        //sub total
+        $durasi = $request->input('durasi');
+        $sub_total = intval($field_harga_sewa) * intval($durasi);
+
+        $data = [
+            'user_id' => auth()->user()->id,
+            'gor_id' => $request->input('gor_id'),
+            'field_id' => $field_id,
+            'sub_total' => $sub_total,
+            // 'foto_struk' => '' //nulleble
+            'durasi' => $durasi
+        ];
+
         if ($tanggalconv->lt($day_now)) {
-            echo 'Tanggal yang Anda pilih sudah lewat';
+            return 'Tanggal yang Anda pilih sudah lewat';
         } else {
-            echo 'Tanggal yang Anda pilih bisa digunakan.';
+            $data['tanggal_main'] = $tanggalconv;
         }
 
         if ($jamconv->lt($waktu_now)) {
-            return 'jam bisa disimpan';
+            return $data['jam_mulai'] = $jam_mulai;
         } else {
-            return 'Jam yang ada isi sudah lewat. inputkan kembali.';
+            return 'jam bisa disimpan';
         }
-
-        $data = $request->validate([
-            'user_id' => 'required',
-            'gor_id' => 'required',
-            'field_id' => 'required',
-            'jam_mulai' => 'required',
-            'durasi' => 'required',
-            'foto_struk' => 'required',
-            'status' => '',
-        ]);
     }
 }

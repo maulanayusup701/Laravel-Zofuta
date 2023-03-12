@@ -48,26 +48,51 @@
                                     <div class="tab-pane fade" id="nav-{{ $field->slug_lapangan }}" role="tabpanel"
                                         aria-labelledby="nav-{{ $field->slug_lapangan }}-tab" tabindex="0">
                                         {{-- @dd($field->schedule); --}}
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col-1">No</th>
-                                                    <th scope="col">Nama Lengkap</th>
-                                                    <th scope="col">Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                @foreach ($field->schedule as $schedule)
-                                                    <tr>
-                                                        <td scope="row">{{ $loop->iteration }} </td>
-                                                        <td>{{ $schedule->user->fullname }}</td>
-                                                        <td><span class="badge text-bg-danger">{{ $schedule->status }}
-                                                            </span>
-                                                        </td>
-                                                    </tr>
-                                                @endforeach
-                                            </tbody>
-                                        </table>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-8">
+                                                    @foreach ($field->schedule as $jadwal)
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col-1">No</th>
+                                                                    <th scope="col">Team</th>
+                                                                    <th scope="col">Tanggal</th>
+                                                                    <th scope="col">Jam Mulai</th>
+                                                                    <th scope="col">Durasi</th>
+                                                                    <th scope="col">Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                {{-- @dd($jadwal) --}}
+                                                                <tr>
+                                                                    <td>
+                                                                        {{ $loop->iteration }}
+                                                                    </td>
+                                                                    <td>
+                                                                        {{ $jadwal->user->fullname ?? '-' }}
+                                                                    </td>
+                                                                    <td>
+                                                                        {{ $jadwal->payment->tanggal_main ?? '-' }}
+                                                                    </td>
+                                                                    <td>
+                                                                        {{ $jadwal->payment->jam_mulai ?? '-' }}
+                                                                    </td>
+                                                                    <td>
+                                                                        {{ $jadwal->payment->durasi ?? '-' }}
+                                                                    </td>
+                                                                    <td>
+                                                                        <span class="badge text-bg-danger">
+                                                                            {{ $jadwal->status ?? '-' }}</span>
+                                                                        </button>
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    @endforeach
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -98,7 +123,7 @@
                                 @endforeach
                             </select>
                             <div class="invalid-feedback">
-                                @error('field_id')
+                                @error('field')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
@@ -148,14 +173,14 @@
                             @enderror
                         </div>
                         <div class="col-lg-4">
-                            <label for="jam_selesai" class="form-label">Durasi</label>
-                            <select class="form-select  @error('jam_selesai') is-invalid @enderror" id="jam_selesai"
-                                name="jam_selesai" required>
+                            <label for="durasi" class="form-label">Durasi</label>
+                            <select class="form-select  @error('durasi') is-invalid @enderror" id="durasi"
+                                name="durasi" required>
                                 <option value="">--Pilih Durasi--</option>
                                 <option value="1">1 Jam</option>
                                 <option value="2">2 Jam</option>
                             </select>
-                            @error('namaLapangan')
+                            @error('durasi')
                                 <div class="invalid-feedback">
                                     {{ $message }}
                                 </div>

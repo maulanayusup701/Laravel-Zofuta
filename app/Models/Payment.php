@@ -18,10 +18,14 @@ class Payment extends Model
 
     public function field()
     {
-        return $this->hasOne(Field::class);
+        return $this->belongsTo(Field::class);
     }
     public function gor()
     {
         return $this->hasOne(Gor::class);
+    }
+    public function schedule()
+    {
+        return $this->hasOne(Schedule::class);
     }
 }

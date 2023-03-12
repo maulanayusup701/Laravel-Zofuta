@@ -12,7 +12,7 @@ class HomeController extends Controller
     public function index()
     {
         return view('frontend.home', [
-            'title' => 'font',
+            'title' => 'Home | Zofuta',
             'gors' => Gor::with('field')->paginate(6)
         ]);
     }

@@ -9,7 +9,7 @@ class Schedule extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
-    protected $with = ['user'];
+    protected $with = ['payment'];
 
     public function field()
     {
@@ -18,5 +18,9 @@ class Schedule extends Model
     public function user()
     {
         return $this->belongsTo(User::class);
+    }
+    public function payment()
+    {
+        return $this->belongsTo(Payment::class);
     }
 }

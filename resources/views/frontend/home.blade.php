@@ -97,26 +97,21 @@
                             </div>
                             <div class="form-group mt-3">
                                 <input type="text" class="form-control @error('subject') is-invalid @enderror"
-                                    name="subject" id="subject" placeholder="Subject">
+                                    name="subject" id="subject" value="{{ old('subject') }}" placeholder="Subject">
                                 @error('subject')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
                                 @enderror
                             </div>
-                            <div class="form-group mt-3">
-                                <textarea class="form-control @error('message') is-invalid @enderror" name="message" rows="5"
-                                    placeholder="Message"></textarea>
+                            <div class="col-md-12 form-group">
+                                <input id="message" type="hidden" name="message" value="{{ old('message') }}">
+                                <trix-editor input="message" value="{{ old('message') }}"></trix-editor>
                                 @error('message')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
                                 @enderror
-                            </div>
-                            <div class="my-3">
-                                <div class="loading">Loading</div>
-                                <div class="error-message"></div>
-                                <div class="sent-messapge">Your message has been sent. Thank you!</div>
                             </div>
                             <button type="submit">Send Message</button>
                         </form>
@@ -126,34 +121,7 @@
             </div>
         </section><!-- End Contact Section -->
 
-        <!-- ======= Clients Section ======= -->
-        <section id="clients" class="clients">
-            <div class="container" data-aos="zoom-in">
-                <div class="section-title">
-                    <h2>Thank You for</h2>
-                </div>
-                <div class="clients-slider swiper">
-                    <div class="swiper-wrapper align-items-center">
-                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-1.png') }}"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-2.png') }}"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-3.png') }}"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-4.png') }}"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-5.png') }}"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-6.png') }}"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-7.png') }}"
-                                class="img-fluid" alt=""></div>
-                        <div class="swiper-slide"><img src="{{ asset('assets/img/clients/client-8.png') }}"
-                                class="img-fluid" alt=""></div>
-                    </div>
-                    <div class="swiper-pagination"></div>
-                </div>
-            </div>
-        </section><!-- End Clients Section -->
+        <!-- ======= Sponsor Section ======= -->
+        @include('frontend.partials.Sponsor')
     </main><!-- End #main -->
 @endsection

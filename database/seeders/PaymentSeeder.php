@@ -14,7 +14,7 @@ class PaymentSeeder extends Seeder
             'user_id' => '1',
             'gor_id' => '1',
             'field_id' => '1',
-            'jam_mulai' => 'Lapangan 1',
+            'jam_mulai' => '09:00',
             'durasi' => '1 Jam',
             'tanggal_main' => '2022/08/01',
             'subtotal' => '100000',

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Contact;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -13,8 +14,11 @@ class ContactController extends Controller
             'name' => 'required|min:3|max:25',
             'email' => 'required|email:dns|',
             'subject' => 'required|min:3|max:25',
-            'message' => 'required|min:5|max:255'
+            'message' => 'required|min:3|max:255'
         ]);
-        User::create($data);
+
+        Contact::create($data);
+        return redirect('/')->with('success', 'Sendding');
+        return;
     }
 }
