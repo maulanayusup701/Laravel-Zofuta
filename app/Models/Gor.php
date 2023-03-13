@@ -9,7 +9,7 @@ class Gor extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
-    protected $with = ['field', 'payment',];
+    protected $with = ['field', 'order',];
 
     public function field()
     {
@@ -19,8 +19,8 @@ class Gor extends Model
     {
         return $this->hasMany(Schedule::class);
     }
-    public function payment()
+    public function order()
     {
-        return $this->hasMany(Payment::class);
+        return $this->hasMany(Order::class);
     }
 }

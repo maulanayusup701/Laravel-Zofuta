@@ -14,25 +14,39 @@
                                 Hay, {{ auth()->user()->fullname }}
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/dashboard"><i
-                                            class="bi bi-layout-text-sidebar-reverse"></i>
-                                        My Dashboard</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <form action="/logout" method="post">
-                                        @csrf
-                                        <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i>
-                                            Logout</button>
-                                    </form>
-                                </li>
-                            </ul>
+                                @if (auth()->user()->role_id == 3)
+                                    <li><a class="dropdown-item" href="/dashboard"><i
+                                                class="bi bi-layout-text-sidebar-reverse"></i>
+                                            My Dashbo ard
+                                        </a>
+                                    </li>
+                                @elseif (auth()->user()->role_id === 2)
+                                    <li><a class="dropdown-item" href="/dashboardadmin"><i
+                                                class="bi bi-layout-text-sidebar-reverse"></i>
+                                            My Dashboard</a>
+                                    </li>
+                                @elseif (auth()->user()->role_id === 1)
+                                    <li><a class="dropdown-item" href="/dashboarddev"><i
+                                                class="bi bi-layout-text-sidebar-reverse"></i>
+                                            My Dashboard
+                                        </a>
+                                    </li>
+                                @endif
+                                <hr class="dropdown-divider">
                         </li>
-                    @else
-                        <li><a class="nav-link scrollto" href="/login">Login</a></li>
-                        <li><a class="nav-link scrollto" href="/register">Register</a></li>
-                    @endauth
+                        <li>
+                            <form action="/logout" method="post">
+                                @csrf
+                                <button type="submit" class="dropdown-item"><i class="bi bi-box-arrow-right"></i>
+                                    Logout</button>
+                            </form>
+                        </li>
+                    </ul>
+                    </li>
+                @else
+                    <li><a class="nav-link scrollto" href="/login">Login</a></li>
+                    <li><a class="nav-link scrollto" href="/register">Register</a></li>
+                @endauth
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

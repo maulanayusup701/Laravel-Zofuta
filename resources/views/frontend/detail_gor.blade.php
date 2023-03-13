@@ -47,11 +47,10 @@
                                 <div class="tab-content mt-3" id="nav-tabContent">
                                     <div class="tab-pane fade" id="nav-{{ $field->slug_lapangan }}" role="tabpanel"
                                         aria-labelledby="nav-{{ $field->slug_lapangan }}-tab" tabindex="0">
-                                        {{-- @dd($field->schedule); --}}
                                         <div class="container">
                                             <div class="row">
                                                 <div class="col-8">
-                                                    @foreach ($field->schedule as $jadwal)
+                                                    @if (count($field->schedule) == 0)
                                                         <table class="table table-striped">
                                                             <thead>
                                                                 <tr>
@@ -59,37 +58,52 @@
                                                                     <th scope="col">Team</th>
                                                                     <th scope="col">Tanggal</th>
                                                                     <th scope="col">Jam Mulai</th>
+                                                                    <th scope="col">Jam Selesai</th>
                                                                     <th scope="col">Durasi</th>
                                                                     <th scope="col">Status</th>
                                                                 </tr>
                                                             </thead>
                                                             <tbody>
-                                                                {{-- @dd($jadwal) --}}
                                                                 <tr>
-                                                                    <td>
-                                                                        {{ $loop->iteration }}
-                                                                    </td>
-                                                                    <td>
-                                                                        {{ $jadwal->user->fullname ?? '-' }}
-                                                                    </td>
-                                                                    <td>
-                                                                        {{ $jadwal->payment->tanggal_main ?? '-' }}
-                                                                    </td>
-                                                                    <td>
-                                                                        {{ $jadwal->payment->jam_mulai ?? '-' }}
-                                                                    </td>
-                                                                    <td>
-                                                                        {{ $jadwal->payment->durasi ?? '-' }}
-                                                                    </td>
-                                                                    <td>
-                                                                        <span class="badge text-bg-danger">
-                                                                            {{ $jadwal->status ?? '-' }}</span>
-                                                                        </button>
+                                                                    <td colspan="7" class="text-center">
+                                                                        <span class="fw-bold">Belum ada jadwal
+                                                                            Booking</span>
                                                                     </td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
-                                                    @endforeach
+                                                    @else
+                                                        <table class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th scope="col-1">No</th>
+                                                                    <th scope="col">Team</th>
+                                                                    <th scope="col">Tanggal</th>
+                                                                    <th scope="col">Jam Mulai</th>
+                                                                    <th scope="col">Jam Selesai</th>
+                                                                    <th scope="col">Durasi</th>
+                                                                    <th scope="col">Status</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                @foreach ($field->schedule as $jadwal)
+                                                                    <tr>
+                                                                        <td>{{ $loop->iteration }}</td>
+                                                                        <td>{{ $jadwal->user->fullname ?? '-' }}</td>
+                                                                        <td>{{ $jadwal->order->tanggal_main ?? '-' }}</td>
+                                                                        <td>{{ $jadwal->order->jam_mulai ?? '-' }}</td>
+                                                                        <td>{{ $jadwal->order->jam_selesai ?? '-' }}</td>
+                                                                        <td>{{ $jadwal->order->durasi ?? '-' }}</td>
+                                                                        <td>
+                                                                            <span
+                                                                                class="badge text-bg-danger">{{ $jadwal->status ?? '-' }}
+                                                                            </span>
+                                                                        </td>
+                                                                    </tr>
+                                                                @endforeach
+                                                            </tbody>
+                                                        </table>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -106,9 +120,8 @@
                 <div class="section-title text-center">
                     <p>Form Booking</p>
                 </div>
-                <form class="needs-validation col-12 mt-5" action="/orderStore" method="post">
+                <form class="needs-validation col-12" action="/orderStore" method="post">
                     @csrf
-                    {{-- mt-5 --}}
                     <div class="row g-3">
                         {{-- mt-5 --}}
                         <div class="col-lg-12">
@@ -189,7 +202,7 @@
                         <hr class="my-4">
                         <div class="form-check">
                             <span class="text-success">Harga</span>
-                            <h4 class="mb-3">Rp.0 Ribu</h4>
+                            <h4 class="mb-3" id="harga">Rp 0</h4>
                         </div>
                         <hr class="my-4">
                         @auth
@@ -205,4 +218,32 @@
                 </form>
             </div>
         </section>
+
+        <script>
+            let durasi = document.getElementById("durasi");
+            let field = document.getElementById("field");
+            let harga = document.getElementById("harga");
+
+            durasi.addEventListener("change", hitung);
+            field.addEventListener("change", hitung);
+
+            function hitung() {
+                let durasiValue = parseFloat(durasi.value);
+                let fieldValue = field.value;
+                let arr = fieldValue.split("|");
+                let hargaSewa = parseFloat(arr[1]);
+                let harga = hargaSewa * durasiValue;
+                if (isNaN(harga)) {
+                    document.getElementById("harga").innerHTML = "Rp 0";
+                } else {
+                    document.getElementById("harga").innerHTML = harga.toLocaleString(
+                        'id-ID', {
+                            style: 'currency',
+                            currency: 'IDR',
+                            minimumFractionDigits: 0
+                        }
+                    );
+                }
+            }
+        </script>
     @endsection

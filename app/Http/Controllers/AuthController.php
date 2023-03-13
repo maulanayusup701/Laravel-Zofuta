@@ -18,7 +18,7 @@ class AuthController extends Controller
     public function register()
     {
         return view('auth.register', [
-            'title' => 'Register',
+            'title' => 'Register | Zofuta',
         ]);
     }
     public function registerStore(Request $request)
@@ -33,7 +33,6 @@ class AuthController extends Controller
         ]);
         $data['password'] = Hash::make($data['password']);
         $data['role_id'] = 3;
-        //return dd($data);
         User::create($data);
 
         return redirect('/login')->with('success', 'Registration successfull! Please login');

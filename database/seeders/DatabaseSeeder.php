@@ -14,6 +14,7 @@ class DatabaseSeeder extends Seeder
             GorSeeder::class,
             FieldSeeder::class,
             ScheduleSeeder::class,
+            OrderSeeder::class,
             PaymentSeeder::class
         ]);
     }

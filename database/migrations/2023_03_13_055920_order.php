@@ -6,20 +6,20 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
-        Schema::create('schedules', function (Blueprint $table) {
+        Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id');
-            $table->foreignId('field_id');
             $table->foreignId('gor_id');
-            $table->foreignId('order_id');
+            $table->foreignId('field_id');
+            $table->string('jam_mulai');
+            $table->string('jam_selesai');
+            $table->string('durasi');
+            $table->string('tanggal_main');
+            $table->string('subtotal');
+            $table->string('foto_struk');
             $table->string('status');
-            // $table->string('waktu');
-            // $table->string('tanggal');
             $table->timestamps();
         });
     }
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('schedules');
+        Schema::dropIfExists('orders');
     }
 };

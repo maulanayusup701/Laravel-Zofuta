@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('nama_lapangan');
             $table->string('slug_lapangan');
             $table->string('keterangan_lapangan');
-            $table->string('harga_sewa');
+            $table->integer('harga_sewa');
             $table->string('foto_lapangan');
             $table->timestamps();
         });

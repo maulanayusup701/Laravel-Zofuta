@@ -42,8 +42,8 @@ class User extends Authenticatable
     {
         return $this->BelongsTo(Role::class);
     }
-    public function payment()
+    public function order()
     {
-        return $this->hasOne(Payment::class);
+        return $this->hasOne(Order::class);
     }
 }

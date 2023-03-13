@@ -14,10 +14,10 @@ class ScheduleSeeder extends Seeder
             'gor_id' => '1',
             'field_id' => '1',
             'user_id' => '3',
-            'payment_id' => '1',
+            'order_id' => '1',
             'status' => 'Booked',
-            'waktu' => '2022-11-12',
-            'tanggal' => '2022-11-12',
+            // 'waktu' => '12-12-2022',
+            // 'tanggal' => '12-12-2022',
         ]);
     }
 }

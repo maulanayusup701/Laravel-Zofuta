@@ -17,7 +17,9 @@ class OrderController extends Controller
         $day_now = Carbon::now();
         $tanggal_main = $request->input('tanggal_main');
         $jam_mulai = $request->input('jam_mulai');
+        $jam_selesai = $request->input('jam_selesai');
         $jamconv = Carbon::createFromFormat('H:m', $jam_mulai);
+        $result_jam_selesai = $jamconv->addHours($jam_selesai);
         $tanggalconv = Carbon::createFromFormat('d/m/Y', $tanggal_main);
 
         //sub total
