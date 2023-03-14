@@ -43,67 +43,101 @@
                         {{-- loopping lapang --}}
                         @foreach ($gor->field as $field)
                             {{-- looping jadwal --}}
-                            <div class="d-blox">
-                                <div class="tab-content mt-3" id="nav-tabContent">
-                                    <div class="tab-pane fade" id="nav-{{ $field->slug_lapangan }}" role="tabpanel"
-                                        aria-labelledby="nav-{{ $field->slug_lapangan }}-tab" tabindex="0">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-8">
-                                                    @if (count($field->schedule) == 0)
-                                                        <table class="table table-striped">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col-1">No</th>
-                                                                    <th scope="col">Team</th>
-                                                                    <th scope="col">Tanggal</th>
-                                                                    <th scope="col">Jam Mulai</th>
-                                                                    <th scope="col">Jam Selesai</th>
-                                                                    <th scope="col">Durasi</th>
-                                                                    <th scope="col">Status</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td colspan="7" class="text-center">
-                                                                        <span class="fw-bold">Belum ada jadwal
-                                                                            Booking</span>
-                                                                    </td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    @else
-                                                        <table class="table table-striped">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th scope="col-1">No</th>
-                                                                    <th scope="col">Team</th>
-                                                                    <th scope="col">Tanggal</th>
-                                                                    <th scope="col">Jam Mulai</th>
-                                                                    <th scope="col">Jam Selesai</th>
-                                                                    <th scope="col">Durasi</th>
-                                                                    <th scope="col">Status</th>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                @foreach ($field->schedule as $jadwal)
+                            <div class="container">
+                                <div class="d-blox">
+                                    <div class="tab-content mt-3" id="nav-tabContent">
+                                        <div class="tab-pane fade" id="nav-{{ $field->slug_lapangan }}" role="tabpanel"
+                                            aria-labelledby="nav-{{ $field->slug_lapangan }}-tab" tabindex="0">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-8">
+                                                        <div class="accordion-body">
+                                                            <div class="container">
+                                                                <div class="row">
+                                                                    <div class="col-3 bg-success p-0 m-0">
+                                                                        <img src="{{ asset('assets/img/lapangan/' . $field->foto_lapangan) }}"
+                                                                            alt="{{ $field->foto_lapangan }}"
+                                                                            class="img-fluid"
+                                                                            style="max-height: 120px; width: 220px">
+                                                                    </div>
+                                                                    <div class="col-8">
+                                                                        <div class="row">
+                                                                            <div class="col">
+                                                                                <h4> Harga Sewa</h4>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <h4> Jenis Lapangan</h4>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col ">
+                                                                                <p> Rp. {{ $field->harga_sewa }}/Jam</p>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <p>{{ $field->keterangan_lapangan }}</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        @if (count($field->schedule) == 0)
+                                                            <table class="table table-striped">
+                                                                <thead>
                                                                     <tr>
-                                                                        <td>{{ $loop->iteration }}</td>
-                                                                        <td>{{ $jadwal->user->fullname ?? '-' }}</td>
-                                                                        <td>{{ $jadwal->order->tanggal_main ?? '-' }}</td>
-                                                                        <td>{{ $jadwal->order->jam_mulai ?? '-' }}</td>
-                                                                        <td>{{ $jadwal->order->jam_selesai ?? '-' }}</td>
-                                                                        <td>{{ $jadwal->order->durasi ?? '-' }}</td>
-                                                                        <td>
-                                                                            <span
-                                                                                class="badge text-bg-danger">{{ $jadwal->status ?? '-' }}
-                                                                            </span>
+                                                                        <th scope="col-1">No</th>
+                                                                        <th scope="col">Team</th>
+                                                                        <th scope="col">Tanggal</th>
+                                                                        <th scope="col">Jam Mulai</th>
+                                                                        <th scope="col">Jam Selesai</th>
+                                                                        <th scope="col">Durasi</th>
+                                                                        <th scope="col">Status</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td colspan="7" class="text-center">
+                                                                            <span class="fw-bold">Belum ada jadwal
+                                                                                Booking</span>
                                                                         </td>
                                                                     </tr>
-                                                                @endforeach
-                                                            </tbody>
-                                                        </table>
-                                                    @endif
+                                                                </tbody>
+                                                            </table>
+                                                        @else
+                                                            <table class="table table-striped">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th scope="col-1">No</th>
+                                                                        <th scope="col">Team</th>
+                                                                        <th scope="col">Tanggal</th>
+                                                                        <th scope="col">Jam Mulai</th>
+                                                                        <th scope="col">Jam Selesai</th>
+                                                                        <th scope="col">Durasi</th>
+                                                                        <th scope="col">Status</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    @foreach ($field->schedule as $jadwal)
+                                                                        <tr>
+                                                                            <td>{{ $loop->iteration }}</td>
+                                                                            <td>{{ $jadwal->user->fullname ?? '-' }}</td>
+                                                                            <td>{{ $jadwal->order->tanggal_main ?? '-' }}
+                                                                            </td>
+                                                                            <td>{{ $jadwal->order->jam_mulai ?? '-' }}</td>
+                                                                            <td>{{ $jadwal->order->jam_selesai ?? '-' }}
+                                                                            </td>
+                                                                            <td>{{ $jadwal->order->durasi ?? '-' }}</td>
+                                                                            <td>
+                                                                                <span
+                                                                                    class="badge text-bg-danger">{{ $jadwal->status ?? '-' }}
+                                                                                </span>
+                                                                            </td>
+                                                                        </tr>
+                                                                    @endforeach
+                                                                </tbody>
+                                                            </table>
+                                                        @endif
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -127,8 +161,8 @@
                         <div class="col-lg-12">
                             <input type="hidden" name="gor_id" id="gor_id" value="{{ $gor->id }}">
                             <label for="field" class="form-label">Pilih Lapangan</label>
-                            <select class="form-select  @error('field') is-invalid @enderror" id="field" name="field"
-                                required>
+                            <select class="form-select  @error('field') is-invalid @enderror" id="field"
+                                name="field" required>
                                 <option value="">--Pilih Lapangan--</option>
                                 @foreach ($gor->field as $field)
                                     <option value="{{ $field->id }}|{{ $field->harga_sewa }}">

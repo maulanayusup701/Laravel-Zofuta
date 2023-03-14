@@ -1,7 +1,8 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center justify-content-lg-between">
-            <h1 class="logo auto me-lg-0"><a href="/" class="logo auto lg-0"><img src="assets/img/logo.png"
-                        alt="" class="img-fluid px-4"></a><a href="/"><span>Zona Futsal</span>
+            <h1 class="logo auto me-lg-0"><a href="/" class="logo auto lg-0"><img
+                        src="{{ asset('assets/img/logo.png') }}" alt="" class="img-fluid px-4"></a><a
+                    href="/"><span>Zona Futsal</span>
                     Purwakarta.</a></h1>
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>

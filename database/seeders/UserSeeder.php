@@ -32,7 +32,7 @@ class UserSeeder extends Seeder
         ]);
         User::factory()->create([
             'username' => 'user',
-            'fullname' => 'User Lapangan',
+            'fullname' => 'User 1',
             'password' => Hash::make('user'),
             'email' => 'user@gmail.com',
             'notelp' => '083808380838',

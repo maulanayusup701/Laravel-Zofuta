@@ -51,9 +51,9 @@
                 </li>
 
                 <li class="sidebar-item">
-                    <a href="index.html" class='sidebar-link'>
+                    <a href="/dashboarddev/contact" class='sidebar-link'>
                         <i class="bi bi-person-fill"></i>
-                        <span>Admin </span>
+                        <span>Contact</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
@@ -81,6 +81,13 @@
                     <a href="index.html" class='sidebar-link'>
                         <i class="bi bi-journal-text"></i>
                         <span>Jadwal</span>
+                    </a>
+                </li>
+                <hr>
+                <li class="sidebar-item">
+                    <a href="/" class='sidebar-link'>
+                        <i class="bi bi-journal-text"></i>
+                        <span>Kujungi Website</span>
                     </a>
                 </li>
             </ul>
