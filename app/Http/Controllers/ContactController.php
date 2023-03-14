@@ -19,6 +19,5 @@ class ContactController extends Controller
 
         Contact::create($data);
         return redirect('/')->with('success', 'Sendding');
-        return;
     }
 }

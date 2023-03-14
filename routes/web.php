@@ -7,23 +7,8 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\DashboardAdminController;
+use App\Http\Controllers\DashboardDevContactController;
 use App\Http\Controllers\DashboardDevController;
-
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
-
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 
 Route::controller(AuthController::class)->group(function () {
     Route::get('/login', 'login')->middleware('guest')->name('login');
@@ -33,6 +18,7 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('/logout', 'logout')->middleware('auth');
 });
 
+//Home
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
     Route::get('/gor/{gor:slug_gor}', 'show');
@@ -40,11 +26,16 @@ Route::controller(HomeController::class)->group(function () {
 
 Route::post('/orderStore', [OrderController::class, 'orderStore']);
 
-Route::post('/contact', [ContactController::class, 'index'])->middleware('guest');
+Route::post('/contact', [ContactController::class, 'index']);
 
+//Dashboard Dev
 route::get('/dashboarddev', [DashboardDevController::class, 'index'])->middleware('dev');
+Route::controller(DashboardDevContactController::class)->group(function () {
+    Route::get('/dashboarddev/contact', 'index')->middleware('dev');
+    Route::get('/dashboarddev/contact/{contact}', 'show')->middleware('dev');
+    Route::delete('/dashboarddev/contact/{contact}', 'destroy')->middleware('dev');
+});
+
 route::get('/dashboardadmin', [DashboardAdminController::class, 'index'])->middleware('admin');
-
-
 
 Route::get('/role', [RoleController::class, 'index']);
