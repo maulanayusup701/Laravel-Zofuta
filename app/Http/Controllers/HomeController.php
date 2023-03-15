@@ -5,12 +5,13 @@ namespace App\Http\Controllers;
 use App\Models\Gor;
 use App\Models\Field;
 use App\Models\Payment;
-use Illuminate\Support\Facades\Request;
+use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index()
     {
+
         return view('frontend.home', [
             'title' => 'Zofuta | Home',
             'gors' => Gor::with('field')->paginate(6)
@@ -23,6 +24,16 @@ class HomeController extends Controller
             'gor' => $gor,
             'schedule' => $field,
             'payment' => $payment
+        ]);
+    }
+
+    public function search(Request $request)
+    {
+        $search = $request->input('search');
+        $gors = Gor::where('nama_gor', 'LIKE', "%$search%")->with('field')->paginate(6);
+        return view('frontend.home', [
+            'title' => 'Zofuta | Home',
+            'gors' => $gors
         ]);
     }
 }

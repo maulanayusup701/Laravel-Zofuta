@@ -22,6 +22,7 @@ Route::controller(AuthController::class)->group(function () {
 Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
     Route::get('/gor/{gor:slug_gor}', 'show');
+    Route::get('/search', 'search');
 });
 
 Route::post('/orderStore', [OrderController::class, 'orderStore']);

@@ -21,9 +21,10 @@
                 <div class="row mb-4">
                     <div class="col-md-8"></div>
                     <div class="col-md-4 ml-auto">
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit" href="#">Search</button>
+                        <form class="d-flex" method="get" action="/search">
+                            <input class="form-control me-2" type="search" name="search" placeholder="Search"
+                                aria-label="Search" required>
+                            <button class="btn btn-outline-success" type="submit" href="">Search</button>
                             {{-- <div class="dropdown" style="margin-left: 20px;">
                                 <a class=" btn btn-outline-success dropdown-toggle" href="#" role="button"
                                     id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
