@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('durasi');
             $table->string('tanggal_main');
             $table->string('subtotal');
-            $table->string('foto_struk');
+            $table->string('foto_struk')->nullable();
             $table->string('status');
             $table->timestamps();
         });

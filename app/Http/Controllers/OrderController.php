@@ -2,49 +2,100 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Order;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Illuminate\Auth\Events\Validated;
 
 class OrderController extends Controller
 {
     public function orderStore(Request $request)
     {
         $field = explode('|', $request->input('field'));
-        $field_id = [0];
-        $field_harga_sewa = [1];
-
-        $waktu_now = Carbon::now();
-        $day_now = Carbon::now();
-        $tanggal_main = $request->input('tanggal_main');
-        $jam_mulai = $request->input('jam_mulai');
-        $jam_selesai = $request->input('jam_selesai');
-        $jamconv = Carbon::createFromFormat('H:m', $jam_mulai);
-        $result_jam_selesai = $jamconv->addHours($jam_selesai);
-        $tanggalconv = Carbon::createFromFormat('d/m/Y', $tanggal_main);
+        $field_id = $field[0];
+        $field_harga_sewa = $field[1];
 
         //sub total
-        $durasi = $request->input('durasi');
+        $durasi = $request->input('durasi') . " jam";
         $sub_total = intval($field_harga_sewa) * intval($durasi);
 
-        $data = [
-            'user_id' => auth()->user()->id,
-            'gor_id' => $request->input('gor_id'),
-            'field_id' => $field_id,
-            'sub_total' => $sub_total,
-            // 'foto_struk' => '' //nulleble
-            'durasi' => $durasi
-        ];
+        //tanggal inputan user
+        $tanggal_inputan_user = $request->input('tanggal_main');
+        $tanggal_inputan_usercon = Carbon::createFromFormat('d-m-Y', $tanggal_inputan_user);
+        $tanggal_user = $tanggal_inputan_usercon->day;
+        $bulan_user = $tanggal_inputan_usercon->month;
+        $tahun_user = $tanggal_inputan_usercon->year;
 
-        if ($tanggalconv->lt($day_now)) {
-            return 'Tanggal yang Anda pilih sudah lewat';
+        $tanggal_sekarang = Carbon::now()->day;
+        $bulan_sekarang = Carbon::now()->month;
+        $tahun_sekarang = Carbon::now()->year;
+
+        $jam_mulai = $request->input('jam_mulai');
+        $jam_inputan_usercon = Carbon::createFromFormat('H:i', $jam_mulai);
+
+        $waktu_sekarang = Carbon::now();
+
+        $jam_mulai = Carbon::parse($jam_mulai);
+        $jam_selesai = $jam_mulai->addHours($durasi);
+
+        if ($tanggal_user < $tanggal_sekarang) {
+            return 'masukan kembali tanggal';
         } else {
-            $data['tanggal_main'] = $tanggalconv;
+            if ($bulan_user < $bulan_sekarang) {
+                return 'masukan kembali bulan';
+            } else {
+                if ($tahun_user < $tahun_sekarang) {
+                    return 'masukan kembali tahun';
+                } else {
+                    if ($jam_inputan_usercon->lt($waktu_sekarang)) {
+                        return 'jam_sudah lewat';
+                    } else {
+                        $datas = [
+                            'id_user' => '',
+                            'gor_id' => $request->input('gor_id'),
+                            'field_id' => $field_id,
+                            'harga_sewa' => $field_harga_sewa,
+                            'subtotal' => $sub_total,
+                            'jam_mulai' => $jam_inputan_usercon,
+                            'jam_selesai' => $jam_selesai,
+                            'durasi' => $durasi,
+                            // 'foto_struk' => '' //nulleble
+                            'tanggal_main' => '',
+                            'status' => 'Waiting for Payment'
+                        ];
+                        $tgl = $tanggal_user . "-" . $bulan_user . "-" . $tahun_user;
+                        $date = Carbon::createFromFormat('d-m-Y', $tgl)->format('d-m-Y');
+                        $datas['tanggal_main'] = $date;
+                        $datas['user_id'] = auth()->user()->id;
+
+                        Order::create($datas);
+                        return redirect('/')->with('success', 'Please make payment and upload struck for validation');
+                    }
+                }
+            }
         }
 
-        if ($jamconv->lt($waktu_now)) {
-            return $data['jam_mulai'] = $jam_mulai;
-        } else {
-            return 'jam bisa disimpan';
-        }
+
+
+        // //sub total
+        // $durasi = $request->input('durasi');
+        // $sub_total = intval($field_harga_sewa) * intval($durasi);
+
+
+        // if ($tanggal_main->lt($tanggal_now)) {
+        //     return 'Tanggal yang Anda pilih sudah lewat';
+        // } else if ($tanggal_main->eq($tanggal_now) && $jamconv->lt($waktu_now)) {
+        //     return 'Jam yang Anda pilih sudah lewat';
+        // } else {
+        // }
     }
 }
+
+// $data = [
+//     'user_id' => auth()->user()->id,
+//     'gor_id' => $request->input('gor_id'),
+//     'field_id' => $field_id,
+//     'sub_total' => $sub_total,
+//     'durasi' => $durasi
+// ];
+// return $data;
