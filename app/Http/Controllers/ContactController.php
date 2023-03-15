@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class ContactController extends Controller
 {
-    public function index(Request $request)
+    public function StoreContact(Request $request)
     {
         $data = $request->validate([
             'name' => 'required|min:3|max:25',

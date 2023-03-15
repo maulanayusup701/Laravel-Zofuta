@@ -10,7 +10,7 @@ class DashboardDevContactController extends Controller
     public function index()
     {
         return view('backend.dev.contact.contact', [
-            'title' => 'Contact | Zofuta',
+            'title' => 'Zofuta | Contact',
             'chat' =>  Contact::latest()->get()
         ]);
     }

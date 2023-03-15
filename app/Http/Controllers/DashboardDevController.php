@@ -10,7 +10,7 @@ class DashboardDevController extends Controller
     public function index()
     {
         return view('backend.dev.index', [
-            'title' => 'Dashboard | Zofuta',
+            'title' => 'Zofuta | Dashboard',
             'countUsers' => DB::table('users')->where('role_id', '3')->get()->count(),
             'countGors' => DB::table('gors')->get()->count(),
             'countfields' => DB::table('fields')->get()->count()

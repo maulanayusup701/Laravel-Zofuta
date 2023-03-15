@@ -12,13 +12,13 @@ class AuthController extends Controller
     public function login()
     {
         return view('auth.login', [
-            'title' => 'Login | Zofuta',
+            'title' => 'Zofuta | Login',
         ]);
     }
     public function register()
     {
         return view('auth.register', [
-            'title' => 'Register | Zofuta',
+            'title' => 'Zofuta | Register',
         ]);
     }
     public function registerStore(Request $request)

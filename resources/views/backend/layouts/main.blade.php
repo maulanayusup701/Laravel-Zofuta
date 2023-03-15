@@ -1,6 +1,6 @@
 @include('backend.partials.meta')
 
-<body>
+<body class="theme-dark" style="overflow-y: auto;">
     <div id="app">
         @include('backend.partials.sidebar')
         <div id="main">

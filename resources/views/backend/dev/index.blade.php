@@ -92,11 +92,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="card">
+                {{-- <div class="card">
                     <div class="card-body">
-
                     </div>
-                </div>
+                </div> --}}
             </div>
         </section>
     </div>

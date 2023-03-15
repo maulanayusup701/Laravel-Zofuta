@@ -26,7 +26,7 @@ Route::controller(HomeController::class)->group(function () {
 
 Route::post('/orderStore', [OrderController::class, 'orderStore']);
 
-Route::post('/contact', [ContactController::class, 'index']);
+Route::post('/contact', [ContactController::class, 'StoreContact'])->name('form-contact');
 
 //Dashboard Dev
 route::get('/dashboarddev', [DashboardDevController::class, 'index'])->middleware('dev');

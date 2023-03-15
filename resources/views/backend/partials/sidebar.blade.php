@@ -42,15 +42,14 @@
         <div class="sidebar-menu">
             <ul class="menu">
                 <li class="sidebar-title">Developer</li>
-
-                <li class="sidebar-item active ">
-                    <a href="/dashboard" class='sidebar-link {{ Request::is('dasboard') ? 'active' : '' }}'>
+                <li class="sidebar-item {{ Request::is('dashboarddev') ? 'active' : '' }}">
+                    <a href="/dashboarddev" class="sidebar-link">
                         <i class="bi bi-grid-fill"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
 
-                <li class="sidebar-item">
+                <li class="sidebar-item {{ Request::is('dashboarddev/contact') ? 'active' : '' }}">
                     <a href="/dashboarddev/contact" class='sidebar-link'>
                         <i class="bi bi-person-fill"></i>
                         <span>Contact</span>

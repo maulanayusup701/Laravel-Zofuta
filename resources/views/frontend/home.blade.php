@@ -16,7 +16,7 @@
     <main id="main">
 
         <!-- =======  Section ======= -->
-        <section id="gor" class="gor">
+        <section id="gor" class="gor pb-0">
             <div class="container" data-aos="fade-up">
                 <div class="row mb-4">
                     <div class="col-md-8"></div>
@@ -66,19 +66,35 @@
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">
             <div class="container" data-aos="fade-up">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                    <p>Contact Us</p>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="section-title p-0">
+                            <h2>Contact</h2>
+                            <p>Contact Us</p>
+                            <div class="alert alert-success alert-dismissible fade show d-none" role="alert"
+                                id="success">
+                                <strong>Send Message Successfully!</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="alert alert-danger alert-dismissible fade show d-none" role="alert"
+                                id="failed">
+                                <strong>Send Message Failed!</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row mt-5">
-                    <div class="col-lg-8 mt-5 mt-lg-0">
-                        <form action="/contact" method="post" class="php-email-form">
+                    <div class="col-lg-8 mt-lg-0">
+                        <form action="/contact" method="post" class="php-email-form" id="form-contact">
                             @csrf
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name"
                                         class="form-control @error('name') is-invalid @enderror" id="name"
-                                        placeholder="Your Name">
+                                        placeholder="Your Name" required>
                                     @error('name')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -87,7 +103,7 @@
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
                                     <input type="email" class="form-control @error('email') is-invalid @enderror"
-                                        name="email" id="email" placeholder="Your Email">
+                                        name="email" id="email" placeholder="Your Email" required>
                                     @error('email')
                                         <div class="invalid-feedback">
                                             {{ $message }}
@@ -97,7 +113,8 @@
                             </div>
                             <div class="form-group mt-3">
                                 <input type="text" class="form-control @error('subject') is-invalid @enderror"
-                                    name="subject" id="subject" value="{{ old('subject') }}" placeholder="Subject">
+                                    name="subject" id="subject" value="{{ old('subject') }}" placeholder="Subject"
+                                    required>
                                 @error('subject')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -105,23 +122,67 @@
                                 @enderror
                             </div>
                             <div class="col-md-12 form-group">
-                                <input id="message" type="hidden" name="message" value="{{ old('message') }}">
-                                <trix-editor input="message" value="{{ old('message') }}"></trix-editor>
+                                <input id="message" type="hidden" name="message" value="{{ old('message') }}" required>
+                                <trix-editor input="message" value="{{ old('message') }}" placeholder="message">
+                                </trix-editor>
                                 @error('message')
                                     <div class="invalid-feedback">
                                         {{ $message }}
                                     </div>
                                 @enderror
                             </div>
-                            <button type="submit">Send Message</button>
+                            <button type="submit" id="submit">
+                                <span class="spinner-border spinner-border-sm d-none" id="loading" role="status"
+                                    aria-hidden="true"></span>
+                                Send Message
+                            </button>
                         </form>
                     </div>
                 </div>
             </div>
-            </div>
         </section><!-- End Contact Section -->
-
-        <!-- ======= Sponsor Section ======= -->
         @include('frontend.partials.Sponsor')
     </main><!-- End #main -->
+    <script>
+        $(document).ready(function() {
+            $('#form-contact').submit(function(event) {
+                // Menghentikan function default
+                event.preventDefault();
+                // submit "disable"
+                $('#submit').attr('disabled', true);
+                // menampilkan animasi loading
+                $('#loading').removeClass('d-none');
+                // mengambil data di form
+                var form_data = $(this).serialize();
+                // kirim AJAX request
+                $.ajax({
+                    type: 'POST',
+                    url: '/contact', // route "web"
+                    data: form_data,
+                    success: function(response) {
+                        // tampilkan success response di console
+                        console.log(response);
+                        // submit "enable"
+                        $('#submit').attr('disabled', false);
+                        // menyembunyikan animasi loading
+                        $('#loading').addClass('d-none');
+                        // tampilkan notifikasi ke html
+                        $('#success').removeClass('d-none')
+                        // reset form
+                        $('#form-contact')[0].reset();
+                    },
+                    error: function(jqXHR, textStatus, errorThrown) {
+                        // Handle error response
+                        console.log(errorThrown);
+                        // submit "enable"
+                        $('#submit').attr('disabled', false);
+                        // menyembunyikan animasi loading
+                        $('#loading').addClass('d-none');
+                        // tampilkan notifikasi ke html
+                        $('#success').removeClass('d-none')
+                    }
+                });
+            });
+        });
+    </script>
 @endsection
