@@ -9,6 +9,7 @@ use App\Http\Controllers\OrderController;
 use App\Http\Controllers\DashboardAdminController;
 use App\Http\Controllers\DashboardDevContactController;
 use App\Http\Controllers\DashboardDevController;
+use App\Http\Controllers\ProfileController;
 
 Route::controller(AuthController::class)->group(function () {
     Route::get('/login', 'login')->middleware('guest')->name('login');
@@ -23,6 +24,11 @@ Route::controller(HomeController::class)->group(function () {
     Route::get('/', 'index');
     Route::get('/gor/{gor:slug_gor}', 'show');
     Route::get('/search', 'search');
+});
+
+//Profil
+Route::controller(ProfileController::class)->group(function () {
+    Route::get('/profile', 'index')->middleware('user');
 });
 
 Route::post('/orderStore', [OrderController::class, 'orderStore']);

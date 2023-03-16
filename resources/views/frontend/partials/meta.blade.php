@@ -45,4 +45,6 @@
 </head>
 <!-- Template Main CSS File -->
 <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
+<link href="{{ asset('assets/css/profile.css') }}" rel="stylesheet">
+
 </head>

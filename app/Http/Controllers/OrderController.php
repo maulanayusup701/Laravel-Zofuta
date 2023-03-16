@@ -18,6 +18,7 @@ class OrderController extends Controller
         //sub total
         $durasi = $request->input('durasi') . " jam";
         $sub_total = intval($field_harga_sewa) * intval($durasi);
+        $durasi = intval($durasi);
 
         //tanggal inputan user
         $tanggal_inputan_user = $request->input('tanggal_main');
@@ -32,7 +33,6 @@ class OrderController extends Controller
 
         $jam_mulai = $request->input('jam_mulai');
         $jam_inputan_usercon = Carbon::createFromFormat('H:i', $jam_mulai);
-
         $waktu_sekarang = Carbon::now();
 
         $jam_mulai = Carbon::parse($jam_mulai);
@@ -51,13 +51,13 @@ class OrderController extends Controller
                         return 'jam_sudah lewat';
                     } else {
                         $datas = [
-                            'id_user' => '',
+                            'id_user' => auth()->user()->id,
                             'gor_id' => $request->input('gor_id'),
                             'field_id' => $field_id,
                             'harga_sewa' => $field_harga_sewa,
                             'subtotal' => $sub_total,
-                            'jam_mulai' => $jam_inputan_usercon,
-                            'jam_selesai' => $jam_selesai,
+                            'jam_mulai' => $jam_inputan_usercon->format('H:i'),
+                            'jam_selesai' => $jam_selesai->format('H:i'),
                             'durasi' => $durasi,
                             // 'foto_struk' => '' //nulleble
                             'tanggal_main' => '',
@@ -69,33 +69,10 @@ class OrderController extends Controller
                         $datas['user_id'] = auth()->user()->id;
 
                         Order::create($datas);
-                        return redirect('/')->with('success', 'Please make payment and upload struck for validation');
+                        return redirect('/profile')->with('success', 'Please make payment and upload struck for validation');
                     }
                 }
             }
         }
-
-
-
-        // //sub total
-        // $durasi = $request->input('durasi');
-        // $sub_total = intval($field_harga_sewa) * intval($durasi);
-
-
-        // if ($tanggal_main->lt($tanggal_now)) {
-        //     return 'Tanggal yang Anda pilih sudah lewat';
-        // } else if ($tanggal_main->eq($tanggal_now) && $jamconv->lt($waktu_now)) {
-        //     return 'Jam yang Anda pilih sudah lewat';
-        // } else {
-        // }
     }
 }
-
-// $data = [
-//     'user_id' => auth()->user()->id,
-//     'gor_id' => $request->input('gor_id'),
-//     'field_id' => $field_id,
-//     'sub_total' => $sub_total,
-//     'durasi' => $durasi
-// ];
-// return $data;

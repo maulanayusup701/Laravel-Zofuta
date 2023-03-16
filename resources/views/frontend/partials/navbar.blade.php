@@ -16,7 +16,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 @if (auth()->user()->role_id == 3)
-                                    <li><a class="dropdown-item" href="/dashboard"><i
+                                    <li><a class="dropdown-item" href="/profile"><i
                                                 class="bi bi-layout-text-sidebar-reverse"></i>
                                             My Dashbo ard
                                         </a>
