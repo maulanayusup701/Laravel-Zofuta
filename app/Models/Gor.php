@@ -9,7 +9,7 @@ class Gor extends Model
 {
     use HasFactory;
     protected $guarded = ['id'];
-    protected $with = ['field', 'order',];
+    protected $with = ['field'];
 
     public function field()
     {

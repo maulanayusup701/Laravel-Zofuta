@@ -21,7 +21,7 @@ class Order extends Model
     }
     public function gor()
     {
-        return $this->hasOne(Gor::class);
+        return $this->belongsTo(Gor::class);
     }
     public function schedule()
     {

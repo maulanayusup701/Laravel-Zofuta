@@ -36,7 +36,7 @@
                                         <h6 class="mb-0">Username</h6>
                                     </div>
                                     <div class="col-sm-9 text-secondary">
-                                        {{ auth()->user()->username }}
+                                        {{ '@' . auth()->user()->username }}
                                     </div>
                                 </div>
                                 <hr>
@@ -126,10 +126,10 @@
                                 @foreach ($order as $order)
                                     <tbody>
                                         <tr>
-                                            <th scope="row">{{ $loop->first }}</th>
+                                            <th scope="row">{{ $loop->iteration }}</th>
                                             <td>{{ $order->tanggal_main }}</td>
                                             <td>{{ $order->user->fullname }}</td>
-                                            <td>King Putsal</td>
+                                            <td>{{ $order->gor->nama_gor }}</td>
                                             <td>{{ $order->field->nama_lapangan }}</td>
                                             <td>{{ $order->jam_mulai }}</td>
                                             <td>{{ $order->jam_selesai }}</td>
